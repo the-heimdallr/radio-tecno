@@ -10,17 +10,23 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
 ATOM = "{http://www.w3.org/2005/Atom}"
+CONTENIDO = "{http://purl.org/rss/1.0/modules/content/}encoded"
 USER_AGENT = "Mozilla/5.0 (Radio Tecno; podcast personal de noticias)"
 TIMEOUT = 20
-MAX_BYTES = 5_000_000  # un feed más grande que esto se corta (el de Hugging Face pesa ~1 MB)
+MAX_BYTES = 10_000_000  # tope por feed (el de Hugging Face pesa ~1 MB)
+MAX_TEXTO = 3000  # caracteres de cada nota que se guardan (después se recortan en guion.py)
+# Pies que agregan WordPress y otros al final de cada nota.
+PIES = re.compile(r"(The post .{0,200}? appeared first on .*$|La entrada .{0,200}? se publicó primero en .*$"
+                  r"|\[(…|\.\.\.)\]|Continue reading.*$|Seguir leyendo.*$|Read more.*$|Leer más.*$)", re.S | re.I)
 
 
 @dataclass
 class Noticia:
     titulo: str
     enlace: str
-    resumen: str
+    resumen: str  # el primer párrafo con texto
     fecha: datetime | None
+    texto: str = ""  # varios párrafos (de content:encoded si el feed lo trae); "" = igual al resumen
     fuente: str = ""
     idioma: str = "es"
     seccion: str = ""
@@ -40,6 +46,18 @@ def texto_plano(fragmento: str) -> str:
         if len(limpio) > 20:
             return limpio
     return _sin_etiquetas(fragmento)
+
+
+def parrafos(fragmento: str, limite: int = MAX_TEXTO) -> str:
+    """HTML → texto de varios párrafos seguidos, hasta `limite` caracteres."""
+    partes = [_sin_etiquetas(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", fragmento or "", flags=re.S | re.I)]
+    partes = [p for p in partes if len(p) > 20] or [_sin_etiquetas(fragmento or "")]
+    texto = ""
+    for parte in partes:
+        if len(texto) >= limite:
+            break
+        texto = f"{texto} {parte}".strip()
+    return PIES.sub("", texto[:limite]).strip()
 
 
 def _sin_etiquetas(fragmento: str) -> str:
@@ -74,11 +92,14 @@ def leer(contenido: bytes) -> list[Noticia]:
     raiz = ET.fromstring(contenido)
     noticias: list[Noticia] = []
     for item in raiz.iter("item"):  # RSS 2.0
+        descripcion = _texto(item.find("description"))
+        contenido = _texto(item.find(CONTENIDO))
         noticias.append(Noticia(
             titulo=texto_plano(_texto(item.find("title"))),
             enlace=_texto(item.find("link")),
-            resumen=texto_plano(_texto(item.find("description"))),
+            resumen=PIES.sub("", texto_plano(descripcion)).strip(),
             fecha=_fecha(_texto(item.find("pubDate"))),
+            texto=parrafos(contenido if len(contenido) > len(descripcion) else descripcion),
         ))
     for entrada in raiz.iter(f"{ATOM}entry"):  # Atom
         enlace = ""
@@ -86,11 +107,13 @@ def leer(contenido: bytes) -> list[Noticia]:
             if link.get("rel", "alternate") == "alternate":
                 enlace = link.get("href", "")
                 break
-        resumen = _texto(entrada.find(f"{ATOM}summary")) or _texto(entrada.find(f"{ATOM}content"))
+        resumen = _texto(entrada.find(f"{ATOM}summary"))
+        contenido = _texto(entrada.find(f"{ATOM}content"))
         noticias.append(Noticia(
             titulo=texto_plano(_texto(entrada.find(f"{ATOM}title"))),
             enlace=enlace,
-            resumen=texto_plano(resumen),
+            resumen=PIES.sub("", texto_plano(resumen or contenido)).strip(),
             fecha=_fecha(_texto(entrada.find(f"{ATOM}published")) or _texto(entrada.find(f"{ATOM}updated"))),
+            texto=parrafos(contenido if len(contenido) > len(resumen) else resumen),
         ))
     return [n for n in noticias if n.titulo and n.enlace]

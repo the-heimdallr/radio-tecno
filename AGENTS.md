@@ -2,7 +2,7 @@
 
 ## Sobre el proyecto
 
-Podcast diario de noticias de tecnología (programación, IA, Python, Linux, repos de GitHub) leídas con voz de mujer (edge-tts). Python 3.12, solo librería estándar más `edge-tts`; sin IA ni claves. La configuración está en `feeds.toml`. Se ejecuta con `python -m radio [--dry-run]` y se prueba con `python -m unittest discover tests`. GitHub Actions (`.github/workflows/episodio.yml`) lo arma todos los días a las 06:00 de Argentina y lo publica en la rama `gh-pages` (GitHub Pages, repo público `the-heimdallr/radio-tecno`); esa rama se reescribe en cada corrida y guarda solo los últimos 7 episodios. Pedido de Javier del 21/11/2026, desde mi-segundo-cerebro.
+Podcast diario de unos 30 minutos de noticias de tecnología (IA, Google, Microsoft, NVIDIA, programación, Python, Linux, repos de GitHub) leídas con voz de mujer (edge-tts): primero todas en español y después todas en inglés, porque Javier está aprendiendo inglés. Cada episodio tiene transcripción con el tiempo de cada palabra y `escuchar.html` la marca mientras suena (único JavaScript del proyecto, porque corre en el navegador). Python 3.12, solo librería estándar más `edge-tts`; sin IA ni claves. La configuración está en `feeds.toml`. Se ejecuta con `python -m radio [--dry-run]` y se prueba con `python -m unittest discover tests`. GitHub Actions (`.github/workflows/episodio.yml`) lo arma todos los días a las 06:00 de Argentina y lo publica en la rama `gh-pages` (GitHub Pages, repo público `the-heimdallr/radio-tecno`); esa rama se reescribe en cada corrida y guarda solo los últimos 7 episodios. Pedido de Javier del 21/11/2026, desde mi-segundo-cerebro.
 
 ## Entorno compartido
 

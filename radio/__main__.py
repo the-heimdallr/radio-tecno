@@ -25,19 +25,17 @@ def cargar_config(ruta: Path) -> dict:
         return tomllib.load(archivo)
 
 
-def bajar_todo(config: dict) -> list[tuple[dict, list[feeds.Noticia]]]:
+def bajar_todo(fuentes: list[guion.Fuente]) -> list[tuple[guion.Fuente, list[feeds.Noticia]]]:
     """Baja todas las fuentes en paralelo. Una fuente caída no frena el episodio."""
-    fuentes = [(s["nombre"], f) for s in config["seccion"] for f in s["fuentes"]]
 
-    def una(par: tuple[str, dict]) -> tuple[dict, list[feeds.Noticia]]:
-        seccion, fuente = par
+    def una(fuente: guion.Fuente) -> tuple[guion.Fuente, list[feeds.Noticia]]:
         try:
-            noticias = feeds.leer(feeds.bajar(fuente["url"]))
+            noticias = feeds.leer(feeds.bajar(fuente.url))
         except Exception as exc:  # red, XML roto, etc.
-            print(f"  ! {seccion} / {fuente['nombre']}: {exc}", file=sys.stderr)
+            print(f"  ! {fuente.seccion} / {fuente.nombre}: {exc}", file=sys.stderr)
             return fuente, []
         for n in noticias:
-            n.fuente, n.idioma, n.seccion = fuente["nombre"], fuente.get("idioma", "es"), seccion
+            n.fuente, n.idioma, n.seccion = fuente.nombre, fuente.idioma, fuente.seccion
         return fuente, noticias
 
     with ThreadPoolExecutor(max_workers=6) as pool:
@@ -64,11 +62,10 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         vistos = {e: f for e, f in vistos.items() if f < hoy}  # se vuelve a leer lo de hoy
 
-    por_fuente = bajar_todo(config)
-    noticias = guion.elegir(por_fuente, set(vistos), ahora, cfg["horas"], cfg["max_por_fuente"], cfg["max_noticias"])
-    sin_resumen = {f"{s['nombre']}/{f['nombre']}" for s in config["seccion"] for f in s["fuentes"] if f.get("resumen") is False}
-    repos = {f"{s['nombre']}/{f['nombre']}" for s in config["seccion"] for f in s["fuentes"] if f.get("repo")}
-    segmentos = guion.armar(noticias, cfg["titulo"], ahora, cfg["max_caracteres_resumen"], sin_resumen, repos)
+    por_fuente = bajar_todo(guion.fuentes_de(config))
+    caracteres_buscados = cfg["minutos"] * cfg["caracteres_por_minuto"]
+    noticias = guion.elegir(por_fuente, set(vistos), ahora, caracteres_buscados, cfg["max_caracteres_resumen"])
+    segmentos = guion.armar(noticias, cfg["titulo"], ahora, cfg["max_caracteres_resumen"])
 
     if not noticias and not args.dry_run:
         print("No hay noticias nuevas: hoy no se arma episodio.")
@@ -77,10 +74,13 @@ def main(argv: list[str] | None = None) -> int:
         for seg in segmentos:
             print(f"[{seg.idioma}] {seg.texto}")
         caracteres = sum(len(s.texto) for s in segmentos)
-        print(f"\n{len(noticias)} noticias, {caracteres} caracteres (~{caracteres // 900} min de audio)")
+        es = sum(1 for f, _ in noticias if f.idioma == "es")
+        print(f"\n{es} noticias en español y {len(noticias) - es} en inglés, {caracteres} caracteres "
+              f"(~{caracteres // cfg['caracteres_por_minuto']} min de audio)")
         return 0
 
-    audio = voz.sintetizar(segmentos, {"es": cfg["voz_es"], "en": cfg["voz_en"]})
+    audio, tramos = voz.sintetizar(segmentos, {"es": cfg["voz_es"], "en": cfg["voz_en"]},
+                                   {"es": cfg.get("velocidad_es", "+0%"), "en": cfg.get("velocidad_en", "+0%")})
     dia = hoy
     episodio = {
         "id": f"radio-tecno-{dia}",
@@ -90,10 +90,12 @@ def main(argv: list[str] | None = None) -> int:
         "bytes": len(audio),
         "segundos": voz.duracion_segundos(len(audio)),
         "notas": guion.notas_html(noticias),
+        "vtt": f"episodios/{dia}.vtt",
     }
     args.salida.mkdir(parents=True, exist_ok=True)
+    podcast.guardar_transcripcion(args.salida, dia, tramos)
     episodios = podcast.agregar_episodio(args.salida, audio, episodio, cfg["episodios_guardados"])
-    podcast.guardar_vistos(args.salida, vistos, [n.enlace for n in noticias], ahora)
+    podcast.guardar_vistos(args.salida, vistos, [n.enlace for _, n in noticias], ahora)
     podcast.escribir_feed(args.salida, episodios, cfg, args.base_url)
     podcast.escribir_pagina(args.salida, episodios, cfg)
     print(f"Episodio {episodio['archivo']}: {len(noticias)} noticias, "

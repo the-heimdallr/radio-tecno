@@ -1,57 +1,113 @@
 # Configuración de Radio Tecno. Para sumar o sacar un feed, editá este archivo:
 # el código no cambia. Probá el resultado con:  python -m radio --dry-run
 #
-# idioma: "es" lo lee la voz en español; "en", la voz en inglés.
-# resumen = false: se lee solo el título (para feeds cuya bajada no se puede escuchar,
-# como Hacker News, que trae solo enlaces y puntos).
+# El episodio tiene dos partes: primero las fuentes con idioma = "es" y después las de
+# idioma = "en" (leídas por la voz en inglés, un poco más despacio, para practicar).
+#
+# Opciones de cada fuente:
+#   max = 3          cuántas noticias como mucho por día (si no, max_por_fuente)
+#   horas = 168      ventana de tiempo propia (blogs que publican pocas veces por semana)
+#   resumen = false  leer solo el título (Hacker News trae solo enlaces y puntos)
+#   repo = true      el título es "dueño/repo" (tendencias de GitHub)
+#   filtro = [...]   solo noticias con alguna de esas palabras (para fuentes generales)
 
 [radio]
 titulo = "Radio Tecno"
-descripcion = "Noticias de programación, IA, Python, Linux y repos de GitHub, leídas en voz alta todas las mañanas. Sin IA: título y bajada de cada fuente."
+descripcion = "Noticias de IA, Google, Microsoft, NVIDIA, programación, Python, Linux y repos de GitHub: primero en español y después en inglés, para practicar. Unos 30 minutos todas las mañanas. Sin IA: título y texto de cada fuente."
 autor = "Radio Tecno"
 idioma = "es"
 voz_es = "es-AR-ElenaNeural"   # siempre voces de mujer
 voz_en = "en-US-AriaNeural"
+velocidad_es = "+0%"
+velocidad_en = "-10%"          # más lento para entender mejor; "+0%" es la velocidad normal
+minutos = 32                   # duración buscada (si las fuentes traen poco, sale más corto)
+caracteres_por_minuto = 850    # medido: 30.196 caracteres dieron 35 min 54 s con el inglés al -10%
 horas = 36                     # noticias publicadas en las últimas N horas
 max_por_fuente = 2
-max_noticias = 18              # unos 10 minutos de audio, ~4 MB
-max_caracteres_resumen = 260
+max_caracteres_resumen = 700   # cuánto se lee de cada noticia (unos 40 segundos)
 episodios_guardados = 7        # los más viejos se borran del sitio
 
 [[seccion]]
-nombre = "Programación"
-fuentes = [
-  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/desarrollo/rss2.xml", idioma = "es" },
-  { nombre = "Xataka", url = "https://www.xataka.com/tag/programacion/rss2.xml", idioma = "es" },
-]
-
-[[seccion]]
 nombre = "Inteligencia artificial"
+nombre_en = "Artificial intelligence"
 fuentes = [
-  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/inteligencia-artificial/rss2.xml", idioma = "es" },
-  { nombre = "Xataka", url = "https://www.xataka.com/tag/inteligencia-artificial/rss2.xml", idioma = "es" },
-  { nombre = "Hugging Face", url = "https://huggingface.co/blog/feed.xml", idioma = "en", max = 1 },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/inteligencia-artificial/rss2.xml", idioma = "es", max = 3 },
+  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/inteligencia-artificial/rss2.xml", idioma = "es", max = 3 },
+  { nombre = "WWWhat's new", url = "https://wwwhatsnew.com/feed/", idioma = "es", max = 4 },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", idioma = "en", max = 4 },
+  { nombre = "Wired", url = "https://www.wired.com/feed/tag/ai/latest/rss", idioma = "en" },
+  { nombre = "ZDNet", url = "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", idioma = "en" },
+  { nombre = "OpenAI", url = "https://openai.com/news/rss.xml", idioma = "en", max = 1, horas = 168 },
+  { nombre = "Google DeepMind", url = "https://deepmind.google/blog/rss.xml", idioma = "en", max = 1, horas = 168 },
+  { nombre = "Hugging Face", url = "https://huggingface.co/blog/feed.xml", idioma = "en", max = 1, horas = 168 },
   { nombre = "Simon Willison", url = "https://simonwillison.net/atom/everything/", idioma = "en", max = 1 },
 ]
 
 [[seccion]]
-nombre = "Python"
+nombre = "Google, Microsoft y NVIDIA"
+nombre_en = "Google, Microsoft and NVIDIA"
 fuentes = [
-  { nombre = "Python Insider", url = "https://blog.python.org/feeds/posts/default", idioma = "en", max = 1 },
-  { nombre = "Real Python", url = "https://realpython.com/atom.xml", idioma = "en", max = 1 },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/google/rss2.xml", idioma = "es" },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/microsoft/rss2.xml", idioma = "es" },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/nvidia/rss2.xml", idioma = "es", horas = 72 },
+  { nombre = "Genbeta", url = "https://www.genbeta.com/tag/google/rss2.xml", idioma = "es" },
+  { nombre = "Genbeta", url = "https://www.genbeta.com/tag/microsoft/rss2.xml", idioma = "es" },
+  { nombre = "Genbeta", url = "https://www.genbeta.com/tag/nvidia/rss2.xml", idioma = "es", horas = 72 },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/google/index.xml", idioma = "en" },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/microsoft/index.xml", idioma = "en", horas = 72 },
+  { nombre = "Google Blog", url = "https://blog.google/rss/", idioma = "en", horas = 72 },
+  { nombre = "NVIDIA Blog", url = "https://blogs.nvidia.com/feed/", idioma = "en", horas = 168 },
+  { nombre = "NVIDIA Developer", url = "https://developer.nvidia.com/blog/feed", idioma = "en", max = 1, horas = 168 },
+  { nombre = "Microsoft Developer Blogs", url = "https://devblogs.microsoft.com/feed/", idioma = "en", max = 1, horas = 168 },
+]
+
+[[seccion]]
+nombre = "Programación"
+nombre_en = "Programming"
+fuentes = [
+  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/desarrollo/rss2.xml", idioma = "es", horas = 72 },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/programacion/rss2.xml", idioma = "es", horas = 72 },
+  { nombre = "GitHub Blog", url = "https://github.blog/feed/", idioma = "en", max = 1, horas = 72 },
+]
+
+[[seccion]]
+nombre = "Python"
+nombre_en = "Python"
+fuentes = [
+  { nombre = "Genbeta", url = "https://www.genbeta.com/tag/python/rss2.xml", idioma = "es", max = 1, horas = 168 },
+  { nombre = "Python Insider", url = "https://blog.python.org/feeds/posts/default", idioma = "en", max = 1, horas = 168 },
+  { nombre = "Real Python", url = "https://realpython.com/atom.xml", idioma = "en", max = 1, horas = 72 },
+  { nombre = "Python at Microsoft", url = "https://devblogs.microsoft.com/python/feed/", idioma = "en", max = 1, horas = 168 },
 ]
 
 [[seccion]]
 nombre = "Linux"
+nombre_en = "Linux"
 fuentes = [
-  { nombre = "MuyLinux", url = "https://www.muylinux.com/feed/", idioma = "es" },
-  { nombre = "Linux Adictos", url = "https://www.linuxadictos.com/feed", idioma = "es", max = 1 },
+  { nombre = "MuyLinux", url = "https://www.muylinux.com/feed/", idioma = "es", max = 3 },
+  { nombre = "Linux Adictos", url = "https://www.linuxadictos.com/feed", idioma = "es" },
   { nombre = "Ubunlog", url = "https://ubunlog.com/feed/", idioma = "es", max = 1 },
+  { nombre = "OMG! Ubuntu", url = "https://www.omgubuntu.co.uk/feed", idioma = "en" },
+]
+
+[[seccion]]
+nombre = "Más tecnología"
+nombre_en = "More tech news"
+fuentes = [
+  { nombre = "Hipertextual", url = "https://hipertextual.com/feed", idioma = "es", max = 5, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "android", "windows", "apple", "meta"] },
+  { nombre = "Infobae", url = "https://www.infobae.com/arc/outboundfeeds/rss/category/tecno/", idioma = "es", max = 5, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "ciberseguridad"] },
+  { nombre = "MuyComputer", url = "https://www.muycomputer.com/feed/", idioma = "es", max = 3 },
+  { nombre = "Wired en español", url = "https://es.wired.com/feed/rss", idioma = "es", max = 2, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "software", "chip", "robot"] },
+  { nombre = "Xataka", url = "https://www.xataka.com/feedburner.xml", idioma = "es", max = 3, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "android", "windows"] },
+  { nombre = "Genbeta", url = "https://www.genbeta.com/index.xml", idioma = "es", max = 3, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "android", "windows"] },
+  { nombre = "Ars Technica", url = "https://feeds.arstechnica.com/arstechnica/technology-lab", idioma = "en" },
 ]
 
 [[seccion]]
 nombre = "Repositorios de GitHub"
+nombre_en = "GitHub repositories"
 fuentes = [
   { nombre = "Tendencias de Python", url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml", idioma = "en", max = 3, repo = true },
-  { nombre = "Hacker News", url = "https://hnrss.org/best", idioma = "en", max = 2, resumen = false },
+  { nombre = "Tendencias de la semana", url = "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml", idioma = "en", max = 2, repo = true },
+  { nombre = "Hacker News", url = "https://hnrss.org/best", idioma = "en", max = 3, resumen = false },
 ]
