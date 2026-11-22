@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: "0 9 * * *" # todos los días a las 06:00 de Argentina
   workflow_dispatch:     # botón "Run workflow" para generarlo a mano
+    inputs:
+      forzar:
+        description: "Rehacer el episodio de hoy si ya existe"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
             git archive FETCH_HEAD | tar -x -C publico
           fi
       - name: Armar el episodio
-        run: python -m radio --salida publico --base-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+        run: python -m radio --salida publico --base-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" ${{ inputs.forzar && '--forzar' || '' }}
       - name: Publicar en gh-pages
         working-directory: publico
         run: |

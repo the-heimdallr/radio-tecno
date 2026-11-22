@@ -50,12 +50,19 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--salida", type=Path, default=RAIZ / "publico")
     p.add_argument("--base-url", default="http://localhost:8000", help="dirección donde se publica la carpeta de salida")
     p.add_argument("--dry-run", action="store_true", help="solo mostrar el guion")
+    p.add_argument("--forzar", action="store_true", help="rehacer el episodio de hoy si ya existe")
     args = p.parse_args(argv)
 
     config = cargar_config(args.config)
     cfg = config["radio"]
     ahora = datetime.now(ZONA)
     vistos = podcast.cargar_vistos(args.salida)
+    hoy = ahora.date().isoformat()
+    if podcast.hay_episodio(args.salida, hoy) and not args.dry_run:
+        if not args.forzar:
+            print(f"Ya hay episodio del {hoy}; para rehacerlo: --forzar")
+            return 0
+        vistos = {e: f for e, f in vistos.items() if f < hoy}  # se vuelve a leer lo de hoy
 
     por_fuente = bajar_todo(config)
     noticias = guion.elegir(por_fuente, set(vistos), ahora, cfg["horas"], cfg["max_por_fuente"], cfg["max_noticias"])
@@ -63,6 +70,9 @@ def main(argv: list[str] | None = None) -> int:
     repos = {f"{s['nombre']}/{f['nombre']}" for s in config["seccion"] for f in s["fuentes"] if f.get("repo")}
     segmentos = guion.armar(noticias, cfg["titulo"], ahora, cfg["max_caracteres_resumen"], sin_resumen, repos)
 
+    if not noticias and not args.dry_run:
+        print("No hay noticias nuevas: hoy no se arma episodio.")
+        return 0
     if args.dry_run:
         for seg in segmentos:
             print(f"[{seg.idioma}] {seg.texto}")
@@ -71,7 +81,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     audio = voz.sintetizar(segmentos, {"es": cfg["voz_es"], "en": cfg["voz_en"]})
-    dia = ahora.date().isoformat()
+    dia = hoy
     episodio = {
         "id": f"radio-tecno-{dia}",
         "titulo": f"{cfg['titulo']} · {guion.fecha_hablada(ahora).capitalize()}",

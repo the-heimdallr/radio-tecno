@@ -107,6 +107,8 @@ class PodcastTest(unittest.TestCase):
                 episodios = podcast.agregar_episodio(carpeta, b"mp3", ep, guardar=3)
             self.assertEqual([e["id"] for e in episodios], ["ep-4", "ep-3", "ep-2"])
             self.assertFalse((carpeta / "episodios/2026-11-01.mp3").exists())  # el viejo se borró
+            self.assertTrue(podcast.hay_episodio(carpeta, "2026-11-04"))
+            self.assertFalse(podcast.hay_episodio(carpeta, "2026-11-01"))
 
             podcast.escribir_feed(carpeta, episodios, cfg, "https://x.github.io/radio/")
             raiz = ET.parse(carpeta / "feed.xml").getroot()

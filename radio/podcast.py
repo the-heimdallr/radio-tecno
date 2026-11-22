@@ -42,6 +42,10 @@ def guardar_vistos(carpeta: Path, vistos: dict[str, str], enlaces: list[str], ho
     _guardar_json(carpeta / "vistos.json", vistos)
 
 
+def hay_episodio(carpeta: Path, dia: str) -> bool:
+    return any(e["archivo"] == f"episodios/{dia}.mp3" for e in _leer_json(carpeta / "episodios.json", []))
+
+
 def agregar_episodio(carpeta: Path, audio: bytes, episodio: dict, guardar: int) -> list[dict]:
     """Guarda el MP3, suma el episodio a la lista y borra los que pasan de `guardar`."""
     (carpeta / "episodios").mkdir(parents=True, exist_ok=True)
