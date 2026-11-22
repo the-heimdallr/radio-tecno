@@ -1,0 +1,57 @@
+# Configuración de Radio Tecno. Para sumar o sacar un feed, editá este archivo:
+# el código no cambia. Probá el resultado con:  python -m radio --dry-run
+#
+# idioma: "es" lo lee la voz en español; "en", la voz en inglés.
+# resumen = false: se lee solo el título (para feeds cuya bajada no se puede escuchar,
+# como Hacker News, que trae solo enlaces y puntos).
+
+[radio]
+titulo = "Radio Tecno"
+descripcion = "Noticias de programación, IA, Python, Linux y repos de GitHub, leídas en voz alta todas las mañanas. Sin IA: título y bajada de cada fuente."
+autor = "Radio Tecno"
+idioma = "es"
+voz_es = "es-AR-ElenaNeural"   # siempre voces de mujer
+voz_en = "en-US-AriaNeural"
+horas = 36                     # noticias publicadas en las últimas N horas
+max_por_fuente = 2
+max_noticias = 18              # unos 10 minutos de audio, ~4 MB
+max_caracteres_resumen = 260
+episodios_guardados = 7        # los más viejos se borran del sitio
+
+[[seccion]]
+nombre = "Programación"
+fuentes = [
+  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/desarrollo/rss2.xml", idioma = "es" },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/programacion/rss2.xml", idioma = "es" },
+]
+
+[[seccion]]
+nombre = "Inteligencia artificial"
+fuentes = [
+  { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/inteligencia-artificial/rss2.xml", idioma = "es" },
+  { nombre = "Xataka", url = "https://www.xataka.com/tag/inteligencia-artificial/rss2.xml", idioma = "es" },
+  { nombre = "Hugging Face", url = "https://huggingface.co/blog/feed.xml", idioma = "en", max = 1 },
+  { nombre = "Simon Willison", url = "https://simonwillison.net/atom/everything/", idioma = "en", max = 1 },
+]
+
+[[seccion]]
+nombre = "Python"
+fuentes = [
+  { nombre = "Python Insider", url = "https://blog.python.org/feeds/posts/default", idioma = "en", max = 1 },
+  { nombre = "Real Python", url = "https://realpython.com/atom.xml", idioma = "en", max = 1 },
+]
+
+[[seccion]]
+nombre = "Linux"
+fuentes = [
+  { nombre = "MuyLinux", url = "https://www.muylinux.com/feed/", idioma = "es" },
+  { nombre = "Linux Adictos", url = "https://www.linuxadictos.com/feed", idioma = "es", max = 1 },
+  { nombre = "Ubunlog", url = "https://ubunlog.com/feed/", idioma = "es", max = 1 },
+]
+
+[[seccion]]
+nombre = "Repositorios de GitHub"
+fuentes = [
+  { nombre = "Tendencias de Python", url = "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml", idioma = "en", max = 3, repo = true },
+  { nombre = "Hacker News", url = "https://hnrss.org/best", idioma = "en", max = 2, resumen = false },
+]

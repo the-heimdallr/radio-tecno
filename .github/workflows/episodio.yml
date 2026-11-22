@@ -1,0 +1,45 @@
+# Arma el episodio del día en GitHub y lo publica en la rama gh-pages (GitHub Pages).
+# No usa claves ni IA: lee los feeds de feeds.toml y los pasa a voz con edge-tts.
+# La rama gh-pages se reescribe en cada corrida con un solo commit, así los MP3 viejos
+# no se acumulan en el historial del repo (quedan solo los últimos episodios).
+name: Episodio diario
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # todos los días a las 06:00 de Argentina
+  workflow_dispatch:     # botón "Run workflow" para generarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: episodio
+  cancel-in-progress: false
+
+jobs:
+  episodio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover tests
+      - name: Traer lo ya publicado (episodios anteriores y noticias ya leídas)
+        run: |
+          mkdir -p publico
+          if git fetch --depth 1 origin gh-pages; then
+            git archive FETCH_HEAD | tar -x -C publico
+          fi
+      - name: Armar el episodio
+        run: python -m radio --salida publico --base-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+      - name: Publicar en gh-pages
+        working-directory: publico
+        run: |
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Episodio $(date -u +%F)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages
