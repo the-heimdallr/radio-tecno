@@ -64,7 +64,8 @@ def main(argv: list[str] | None = None) -> int:
 
     por_fuente = bajar_todo(guion.fuentes_de(config))
     caracteres_buscados = cfg["minutos"] * cfg["caracteres_por_minuto"]
-    noticias = guion.elegir(por_fuente, set(vistos), ahora, caracteres_buscados, cfg["max_caracteres_resumen"])
+    proporcion_en = float(cfg.get("proporcion_en", 0.5))
+    noticias = guion.elegir(por_fuente, set(vistos), ahora, caracteres_buscados, cfg["max_caracteres_resumen"], proporcion_en)
     segmentos = guion.armar(noticias, cfg["titulo"], ahora, cfg["max_caracteres_resumen"])
 
     if not noticias and not args.dry_run:

@@ -23,7 +23,7 @@ programación, Python, Linux y repos de GitHub, armado con Python. Lee los feeds
 |---------|----------|
 | `feeds.toml` | Configuración: fuentes por sección, voces y topes. Para cambiar las noticias, se toca solo esto |
 | `radio/feeds.py` | Baja los feeds y lee RSS 2.0 y Atom con `urllib` y `xml.etree` (librería estándar) |
-| `radio/guion.py` | Elige las noticias hasta llenar unos 30 minutos (mitad por idioma, una por fuente por vuelta, sin repetir) y arma el guion |
+| `radio/guion.py` | Elige las noticias hasta llenar unos 30 minutos (proporción configurable con `proporcion_en`, por defecto 70 % en inglés, una por fuente por vuelta, sin repetir) y arma el guion |
 | `radio/voz.py` | Pasa cada segmento a MP3 con edge-tts (`asyncio`), los pega y guarda el momento de cada palabra |
 | `radio/podcast.py` | Guarda el episodio y su transcripción (JSON y VTT), borra los viejos y escribe `feed.xml` e `index.html` |
 | `radio/escuchar.html` | La página que marca la palabra que suena (el único JavaScript: en el navegador no corre Python) |

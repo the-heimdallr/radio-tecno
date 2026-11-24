@@ -21,6 +21,7 @@ voz_en = "en-US-AriaNeural"
 velocidad_es = "+0%"
 velocidad_en = "-10%"          # más lento para entender mejor; "+0%" es la velocidad normal
 minutos = 32                   # duración buscada (si las fuentes traen poco, sale más corto)
+proporcion_en = 0.7            # parte del episodio en inglés (0.5 = mitad y mitad; lo que sobra pasa al otro idioma)
 caracteres_por_minuto = 850    # medido: 30.196 caracteres dieron 35 min 54 s con el inglés al -10%
 horas = 36                     # noticias publicadas en las últimas N horas
 max_por_fuente = 2
@@ -34,9 +35,9 @@ fuentes = [
   { nombre = "Xataka", url = "https://www.xataka.com/tag/inteligencia-artificial/rss2.xml", idioma = "es", max = 3 },
   { nombre = "Genbeta", url = "https://www.genbeta.com/categoria/inteligencia-artificial/rss2.xml", idioma = "es", max = 3 },
   { nombre = "WWWhat's new", url = "https://wwwhatsnew.com/feed/", idioma = "es", max = 4 },
-  { nombre = "The Verge", url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", idioma = "en", max = 4 },
-  { nombre = "Wired", url = "https://www.wired.com/feed/tag/ai/latest/rss", idioma = "en" },
-  { nombre = "ZDNet", url = "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", idioma = "en" },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", idioma = "en", max = 6 },
+  { nombre = "Wired", url = "https://www.wired.com/feed/tag/ai/latest/rss", idioma = "en", max = 5 },
+  { nombre = "ZDNet", url = "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", idioma = "en", max = 5 },
   { nombre = "OpenAI", url = "https://openai.com/news/rss.xml", idioma = "en", max = 1, horas = 168 },
   { nombre = "Google DeepMind", url = "https://deepmind.google/blog/rss.xml", idioma = "en", max = 1, horas = 168 },
   { nombre = "Hugging Face", url = "https://huggingface.co/blog/feed.xml", idioma = "en", max = 1, horas = 168 },
@@ -53,8 +54,8 @@ fuentes = [
   { nombre = "Genbeta", url = "https://www.genbeta.com/tag/google/rss2.xml", idioma = "es" },
   { nombre = "Genbeta", url = "https://www.genbeta.com/tag/microsoft/rss2.xml", idioma = "es" },
   { nombre = "Genbeta", url = "https://www.genbeta.com/tag/nvidia/rss2.xml", idioma = "es", horas = 72 },
-  { nombre = "The Verge", url = "https://www.theverge.com/rss/google/index.xml", idioma = "en" },
-  { nombre = "The Verge", url = "https://www.theverge.com/rss/microsoft/index.xml", idioma = "en", horas = 72 },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/google/index.xml", idioma = "en", max = 4 },
+  { nombre = "The Verge", url = "https://www.theverge.com/rss/microsoft/index.xml", idioma = "en", max = 4, horas = 72 },
   { nombre = "Google Blog", url = "https://blog.google/rss/", idioma = "en", horas = 72 },
   { nombre = "NVIDIA Blog", url = "https://blogs.nvidia.com/feed/", idioma = "en", horas = 168 },
   { nombre = "NVIDIA Developer", url = "https://developer.nvidia.com/blog/feed", idioma = "en", max = 1, horas = 168 },
@@ -87,7 +88,7 @@ fuentes = [
   { nombre = "MuyLinux", url = "https://www.muylinux.com/feed/", idioma = "es", max = 3 },
   { nombre = "Linux Adictos", url = "https://www.linuxadictos.com/feed", idioma = "es" },
   { nombre = "Ubunlog", url = "https://ubunlog.com/feed/", idioma = "es", max = 1 },
-  { nombre = "OMG! Ubuntu", url = "https://www.omgubuntu.co.uk/feed", idioma = "en" },
+  { nombre = "OMG! Ubuntu", url = "https://www.omgubuntu.co.uk/feed", idioma = "en", max = 4 },
 ]
 
 [[seccion]]
@@ -100,7 +101,7 @@ fuentes = [
   { nombre = "Wired en español", url = "https://es.wired.com/feed/rss", idioma = "es", max = 2, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "software", "chip", "robot"] },
   { nombre = "Xataka", url = "https://www.xataka.com/feedburner.xml", idioma = "es", max = 3, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "android", "windows"] },
   { nombre = "Genbeta", url = "https://www.genbeta.com/index.xml", idioma = "es", max = 3, filtro = ["inteligencia artificial", "ia", "google", "microsoft", "nvidia", "openai", "chatgpt", "gemini", "linux", "python", "programación", "software", "chip", "android", "windows"] },
-  { nombre = "Ars Technica", url = "https://feeds.arstechnica.com/arstechnica/technology-lab", idioma = "en" },
+  { nombre = "Ars Technica", url = "https://feeds.arstechnica.com/arstechnica/technology-lab", idioma = "en", max = 6 },
 ]
 
 [[seccion]]

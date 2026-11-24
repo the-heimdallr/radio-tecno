@@ -101,6 +101,29 @@ class GuionTest(unittest.TestCase):
         elegidas = guion.elegir(por_fuente, set(), AHORA, caracteres=416, max_caracteres=700)
         self.assertEqual(sum(1 for f, _ in elegidas if f.idioma == "en"), 3)
 
+    def test_elegir_respeta_proporcion_en_y_pasa_sobrante(self):
+        es = fuente("ES", maximo=10)
+        en = fuente("EN", idioma="en", maximo=10)
+        # Cada noticia pesa ~104 caracteres (len("en 0") + 70 + 30 = 104). Con 1040 chars: 10 noticias.
+        por_fuente = [
+            (es, [noticia(f"es {i}", f"es/{i}", resumen="x" * 70) for i in range(10)]),
+            (en, [noticia(f"en {i}", f"en/{i}", resumen="x" * 70) for i in range(10)]),
+        ]
+        elegidas = guion.elegir(por_fuente, set(), AHORA, caracteres=1040, max_caracteres=700, proporcion_en=0.7)
+        cant_es = sum(1 for f, _ in elegidas if f.idioma == "es")
+        cant_en = sum(1 for f, _ in elegidas if f.idioma == "en")
+        self.assertEqual(cant_es, 3)
+        self.assertEqual(cant_en, 7)
+
+        # Si faltan noticias en inglés, lo que sobra pasa al español
+        por_fuente_poco_en = [
+            (es, [noticia(f"es {i}", f"es/{i}", resumen="x" * 70) for i in range(10)]),
+            (en, [noticia(f"en {i}", f"en/{i}", resumen="x" * 70) for i in range(2)]),
+        ]
+        elegidas2 = guion.elegir(por_fuente_poco_en, set(), AHORA, caracteres=1040, max_caracteres=700, proporcion_en=0.7)
+        self.assertEqual(sum(1 for f, _ in elegidas2 if f.idioma == "en"), 2)
+        self.assertEqual(sum(1 for f, _ in elegidas2 if f.idioma == "es"), 8)
+
     def test_recortar_en_fin_de_oracion(self):
         texto = "Primera oración bastante larga. Segunda oración que no entra en el límite."
         self.assertEqual(guion.recortar(texto, 40), "Primera oración bastante larga.")

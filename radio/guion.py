@@ -111,11 +111,11 @@ def candidatas(por_fuente: list[tuple[Fuente, list[Noticia]]], vistos: set[str],
 
 
 def elegir(por_fuente: list[tuple[Fuente, list[Noticia]]], vistos: set[str], ahora: datetime,
-           caracteres: int, max_caracteres: int) -> list[tuple[Fuente, Noticia]]:
-    """Elige hasta llenar `caracteres` (la duración buscada), mitad en español y mitad en inglés.
+           caracteres: int, max_caracteres: int, proporcion_en: float = 0.5) -> list[tuple[Fuente, Noticia]]:
+    """Elige hasta llenar `caracteres` (la duración buscada), repartiendo según `proporcion_en`.
 
     Dentro de cada idioma toma una noticia de cada fuente por vuelta, así no se llena con
-    la primera fuente. Si un idioma no llega a su mitad, lo que sobra pasa al otro.
+    la primera fuente. Si un idioma no llega a su cupo, lo que sobra pasa al otro.
     Devuelve las elegidas en el orden de lectura: español, inglés; sección y fuente según feeds.toml.
     """
     cola = candidatas(por_fuente, vistos, ahora)
@@ -136,9 +136,11 @@ def elegir(por_fuente: list[tuple[Fuente, list[Noticia]]], vistos: set[str], aho
                 if usados[idioma] >= tope:
                     break
 
-    mitad = caracteres // 2
-    tomar("es", mitad)
-    tomar("en", mitad)
+    prop = max(0.0, min(1.0, float(proporcion_en)))
+    tope_en = round(caracteres * prop)
+    tope_es = caracteres - tope_en
+    tomar("es", tope_es)
+    tomar("en", tope_en)
     tomar("es", caracteres - usados["en"])  # lo que no usó el inglés
     tomar("en", caracteres - usados["es"])  # y al revés
     idioma_orden = {"es": 0, "en": 1}

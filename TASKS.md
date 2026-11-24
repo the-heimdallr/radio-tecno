@@ -10,5 +10,6 @@
 
 | ID | Tarea | Responsable | Cerrada |
 |----|-------|-------------|---------|
+| T-004 | Proporción de inglés configurable y 70 % en inglés | IA | 2026-11-24 |
 | T-003 | Noticias en español primero y después en inglés, unos 30 minutos, más temas (Google, Microsoft, NVIDIA, IA) y texto marcado mientras suena | IA | 2026-11-21 |
 | T-001 | Completar la sección "Sobre el proyecto" de AGENTS.md | IA | 2026-11-21 |
