@@ -1,0 +1,955 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:08.262
+Hola. Esto es Radio Tecno, sábado 28 de noviembre. Hoy hay 28 noticias en español y 11 en
+
+00:00:08.262 --> 00:00:09.768
+inglés.
+
+00:00:09.868 --> 00:00:12.888
+Primero, las noticias en español.
+
+00:00:12.988 --> 00:00:15.432
+Inteligencia artificial.
+
+00:00:15.532 --> 00:00:20.169
+De Xataka: China ya fabrica casi una de cada once memorias DRAM del mundo
+
+00:00:20.169 --> 00:00:23.088
+y la IA le está pagando la fábrica.
+
+00:00:23.188 --> 00:00:29.350
+Es la época dorada para las memorias... para fabricarlas, quiero decir. Si te dedicas
+
+00:00:29.350 --> 00:00:33.213
+a la manufactura de componentes, gracias a la IA vas a vender todo lo
+
+00:00:33.213 --> 00:00:38.738
+que produzcas y más. Las gráficas de beneficios operativos de los fabricantes tienen forma
+
+00:00:38.738 --> 00:00:42.450
+de ascenso empinado a una montaña y a modo de ejemplo, en el tercer
+
+00:00:42.450 --> 00:00:46.000
+trimestre del año el de SK hynix se ha septuplicado y el de Samsung
+
+00:00:46.000 --> 00:00:51.588
+casi por nueve. Pero esta dinámica no solo beneficia a las veteranas, sino también
+
+00:00:51.588 --> 00:00:58.013
+a las que intentan hacerse un hueco. Aquí aparecen dos corporaciones chinas: CXMT y
+
+00:00:58.013 --> 00:01:05.788
+YMTC, como detalla el Korea Times. Despuntando que es gerundio. Hace 10 años en Hefei
+
+00:01:05.788 --> 00:01:10.872
+nació el que ya es el cuarto productor mundial de DRAM: CXMT.
+
+00:01:10.972 --> 00:01:16.897
+De Xataka: Tras arrasar en matemáticas y ciberseguridad, la IA tiene nuevo objetivo: liberar
+
+00:01:16.897 --> 00:01:20.208
+las funciones capadas de tu cámara de fotos.
+
+00:01:20.308 --> 00:01:23.883
+El firmware es el software interno que decide lo que puedes y no puedes
+
+00:01:23.883 --> 00:01:29.433
+hacer con tu dispositivo. Es algo que los fabricantes siempre han controlado con celo,
+
+00:01:29.433 --> 00:01:35.658
+pero la inteligencia artificial está facilitando destriparlo. Ocurre en muchos terrenos, como el de
+
+00:01:35.658 --> 00:01:41.420
+la ciberseguridad donde se están encontrando fallos en software ( también aprovechando esos fallos), en
+
+00:01:41.420 --> 00:01:46.945
+videojuegos para disparar lo que se conoce como recompilaciones ( como llevar 'GTA VI' a
+
+00:01:46.945 --> 00:01:53.795
+PC). Y, ahora, también en las cámaras de fotos. Modificar el software no es
+
+00:01:53.795 --> 00:01:58.745
+algo nuevo y, en ocasiones, con modelos de dispositivos muy populares la comunidad se
+
+00:01:58.745 --> 00:02:02.904
+lanza en masa para hacer lo que a la compañía no le apetece hacer.
+
+00:02:03.004 --> 00:02:08.441
+De Xataka: El revuelo con T3 Code y programar con IA, explicado: un software
+
+00:02:08.441 --> 00:02:12.600
+open source que usa telemetría para identificar al usuario.
+
+00:02:12.700 --> 00:02:17.437
+Sacar una aplicación específica para algo que necesitas ya no es un sueño, forma
+
+00:02:17.437 --> 00:02:22.262
+parte de un vibecoding que se ha convertido en habitual. La programación se incluye
+
+00:02:22.262 --> 00:02:28.662
+en herramientas comerciales, como Claude, ChatGPT o Gemini, aunque tenemos a nuestro alcance otras
+
+00:02:28.662 --> 00:02:35.437
+herramientas especializadas que hasta se distribuyen bajo código abierto. No obstante, eso no significa
+
+00:02:35.437 --> 00:02:41.825
+que estemos exentos de peligro. Abierto no es sinónimo de limpio. El software open
+
+00:02:41.825 --> 00:02:46.187
+source que se distribuye en plataformas como GitHub incluye el código que da forma
+
+00:02:46.187 --> 00:02:51.462
+a los distintos programas. El desarrollador explica qué hace su app, da acceso a
+
+00:02:51.462 --> 00:02:55.680
+los archivos y suele permitir que otros creadores contribuyan.
+
+00:02:55.780 --> 00:03:01.180
+De WWWhat's new: SAP confirma un incidente de seguridad tras informaciones sobre una intrusión
+
+00:03:01.180 --> 00:03:02.808
+en GitHub.
+
+00:03:02.908 --> 00:03:08.095
+SAP, el mayor fabricante de software empresarial de Europa, ha confirmado un incidente de
+
+00:03:08.095 --> 00:03:13.670
+seguridad tras detectar «actividad sospechosa» en sus sistemas, después de que la prensa alemana
+
+00:03:13.670 --> 00:03:17.933
+informara de una intrusión en la que los atacantes habrían robado tokens de acceso
+
+00:03:17.933 --> 00:03:23.220
+de empleados para manipular el código de la compañía en GitHub. La empresa asegura
+
+00:03:23.220 --> 00:03:26.983
+que, por ahora, no hay indicios de que se haya accedido a los datos
+
+00:03:26.983 --> 00:03:33.170
+de negocio de los clientes. Lo cuenta TheNextWeb. El caso tiene un ingrediente muy
+
+00:03:33.170 --> 00:03:39.420
+de 2026: según las fuentes citadas, en el ataque podría haberse usado inteligencia artificial
+
+00:03:39.420 --> 00:03:41.472
+que actúa por sí sola.
+
+00:03:41.572 --> 00:03:45.772
+De WWWhat's new: Un agente de IA paga un pedido de Papa John’s directamente
+
+00:03:45.772 --> 00:03:48.672
+desde la cuenta bancaria del cliente.
+
+00:03:48.772 --> 00:03:52.847
+Un agente de inteligencia artificial ha hecho y pagado un pedido de Papa John’s
+
+00:03:52.847 --> 00:03:57.847
+cargándolo directamente a la cuenta bancaria del cliente, sin usar tarjeta, en lo que
+
+00:03:57.847 --> 00:04:02.622
+la empresa de pagos TrueLayer describe como el primer pago agéntico «Pay by Bank»
+
+00:04:02.622 --> 00:04:10.747
+a un minorista británico. La prueba se anunció el viernes 27 de noviembre de 2026, en pleno Black Friday,
+
+00:04:10.747 --> 00:04:17.484
+dentro del entorno de pruebas regulado de la autoridad financiera británica. Lo cuenta TheNextWeb.
+
+00:04:17.484 --> 00:04:22.709
+El pedido era de lo más mundano —nueve mini pizzas margarita, según The Guardian—,
+
+00:04:22.709 --> 00:04:26.159
+pero lo que hay detrás apunta a un cambio profundo en cómo pagaremos las
+
+00:04:26.159 --> 00:04:28.824
+cosas en la era de los agentes.
+
+00:04:28.924 --> 00:04:34.036
+De WWWhat's new: Un ciberincidente obliga a Reino Unido a desconectar servicios de prestaciones
+
+00:04:34.036 --> 00:04:35.688
+sociales.
+
+00:04:35.788 --> 00:04:41.463
+El Departamento de Trabajo y Pensiones de Reino Unido (DWP) ha desconectado varios de
+
+00:04:41.463 --> 00:04:45.813
+sus servicios en línea como precaución tras detectar un incidente de ciberseguridad en sus
+
+00:04:45.813 --> 00:04:53.650
+sistemas. La avería se confirmó la mañana del viernes 27 de noviembre de 2026, y el organismo asegura que
+
+00:04:53.650 --> 00:05:00.075
+los pagos de prestaciones y pensiones no se verán afectados. Lo cuenta TheNextWeb. El
+
+00:05:00.075 --> 00:05:04.775
+susto es mayúsculo por lo que hay detrás: el DWP es la columna vertebral
+
+00:05:04.775 --> 00:05:10.463
+del estado del bienestar británico, del que dependen millones de personas. Los servicios en
+
+00:05:10.463 --> 00:05:15.763
+línea, no los pagos: muchos beneficiarios no pudieron acceder esta mañana a sus cuentas
+
+00:05:15.763 --> 00:05:19.704
+del Universal Credit, el principal subsidio del país.
+
+00:05:19.804 --> 00:05:24.716
+De WWWhat's new: Neuralink recibe la autorización de la FDA para probar su implante
+
+00:05:24.716 --> 00:05:27.264
+cerebral en pacientes con ELA.
+
+00:05:27.364 --> 00:05:32.289
+La FDA, la agencia del medicamento de Estados Unidos, ha autorizado a Neuralink a
+
+00:05:32.289 --> 00:05:36.814
+iniciar el primer ensayo decisivo de su implante cerebral LINK en pacientes con ELA (
+
+00:05:36.814 --> 00:05:42.301
+esclerosis lateral amiotrófica), con el objetivo de que puedan controlar dispositivos digitales con el
+
+00:05:42.301 --> 00:05:50.139
+pensamiento. La empresa de Elon Musk anunció la aprobación el 25 de noviembre de 2026. Lo
+
+00:05:50.139 --> 00:05:55.576
+cuenta Engadget. Es un salto relevante en la trayectoria de Neuralink: pasar de las
+
+00:05:55.576 --> 00:06:00.514
+pruebas exploratorias al ensayo que, si sale bien, abre la puerta a comercializar el
+
+00:06:00.514 --> 00:06:07.214
+dispositivo. Controlar ordenadores y otros dispositivos sin teclados ni mandos, solo con la actividad
+
+00:06:07.214 --> 00:06:11.712
+cerebral, enfocado en devolver independencia a personas con ELA.
+
+00:06:11.812 --> 00:06:13.584
+Linux.
+
+00:06:13.684 --> 00:06:20.146
+De MuyLinux: Disponible Linux Mint 27 Beta con Linux 7.0, Cinnamon 6.
+
+00:06:20.146 --> 00:06:22.536
+8 y más novedades.
+
+00:06:22.636 --> 00:06:27.523
+Ya está disponible la descarga de Linux Mint 27 Beta, la previa de la próxima
+
+00:06:27.523 --> 00:06:32.698
+versión mayor de la distribución. Siguiendo la hoja de ruta marcada tras el cambio
+
+00:06:32.698 --> 00:06:36.636
+de ciclo, se trata de un lanzamiento muy esperado que se ha demorado más
+
+00:06:36.636 --> 00:06:40.061
+de lo habitual, pero que ya encara el tramo final antes de su puesta
+
+00:06:40.061 --> 00:06:46.261
+de largo. Como es habitual, conviene recordar que esta beta está pensada exclusivamente para
+
+00:06:46.261 --> 00:06:52.323
+pruebas, nunca para equipos en producción. Quienes necesiten instalar ya una versión de Linux
+
+00:06:52.323 --> 00:06:56.148
+Mint para el medio y largo plazo tienen en Linux Mint 22.3
+
+00:06:56.148 --> 00:07:02.736
+la mejor opción, actualizada el pasado agosto y con soporte garantizado hasta 2029.
+
+00:07:02.836 --> 00:07:10.632
+De Linux Adictos: WINE 11.23 llega con soporte para ARM64 en macOS y 300 cambios.
+
+00:07:10.732 --> 00:07:16.182
+No ha habido Release Candidate esta semana. Y es que, como venimos diciendo en
+
+00:07:16.182 --> 00:07:22.657
+las últimas publicaciones, pronto empezarán a llegar, pero no se sabe exactamente cuándo. De
+
+00:07:22.657 --> 00:07:28.332
+este modo, lo que sí ha lanzado WineHQ este viernes ha sido WINE 11.23,
+
+00:07:28.332 --> 00:07:31.857
+lo que corresponde a otra versión de desarrollo de las que llegan cada quince
+
+00:07:31.857 --> 00:07:37.107
+días. Si no me equivoco, que también podría ser, la semana que viene o
+
+00:07:37.107 --> 00:07:42.969
+la siguiente ya estaremos hablando de la llegada de WINE 12.0-rc1. Pero
+
+00:07:42.969 --> 00:07:47.894
+lo que tenemos entre manos ahora mismo es el recién lanzado WINE 11.23, y
+
+00:07:47.894 --> 00:07:51.744
+en su lista de cambios hay algo interesante, por lo menos para los usuarios
+
+00:07:51.744 --> 00:07:53.424
+de macOS.
+
+00:07:53.524 --> 00:07:59.649
+De Linux Adictos: digiKam 9.2.0 incorpora búsqueda fotográfica con inteligencia artificial
+
+00:07:59.649 --> 00:08:01.056
+local.
+
+00:08:01.156 --> 00:08:05.706
+digiKam 9.2.0 ya está disponible con cambios importantes en la gestión
+
+00:08:05.706 --> 00:08:10.106
+de bases de datos, una nueva herramienta de búsqueda mediante lenguaje natural y la
+
+00:08:10.106 --> 00:08:16.606
+eliminación definitiva del soporte para Qt5. Esta versión del conocido gestor de fotografías de
+
+00:08:16.606 --> 00:08:21.193
+código abierto también llega cinco meses después de 9.1 y amplía la documentación
+
+00:08:21.193 --> 00:08:25.706
+con nuevos idiomas y completa la transición de la versión para macOS con procesadores
+
+00:08:25.706 --> 00:08:34.056
+Intel a Qt6. El equipo de desarrollo ha registrado 123 incidencias resueltas para este lanzamiento.
+
+00:08:34.156 --> 00:08:39.312
+De Ubunlog: Interacción entre los distintos componentes del ecosistema IA.
+
+00:08:39.412 --> 00:08:44.524
+En los artículos anteriores comenzamos a definir diferentes términos relacionados con el ecosistema de
+
+00:08:44.524 --> 00:08:49.862
+la inteligencia artificial que, con distintos nombres según las plataformas, a mplían las funciones
+
+00:08:49.862 --> 00:08:55.574
+de los modelos. En este artículo abordaremos la interacción entre los distintos componentes de
+
+00:08:55.574 --> 00:09:01.587
+ese ecosistema. Como dijimos en el artículo anterior, e l sistema tradicional de interactuar
+
+00:09:01.587 --> 00:09:06.599
+con los modelos funciona muy bien para tareas únicas, como escribir un pequeño programa,
+
+00:09:06.599 --> 00:09:10.824
+extraer los puntos clave de un documento o generar una imagen.
+
+00:09:10.924 --> 00:09:12.960
+Más tecnología.
+
+00:09:13.060 --> 00:09:18.322
+De Hipertextual: La historia de Bleem!, el emulador de PlayStation que lo cambió todo (
+
+00:09:18.322 --> 00:09:20.400
+y enfureció a Sony).
+
+00:09:20.500 --> 00:09:25.187
+Hoy en día, los emuladores de juegos están al alcance de todos los usuarios,
+
+00:09:25.187 --> 00:09:30.875
+desde principiantes hasta entusiastas, y en todas las plataformas. Pero hubo una pieza de
+
+00:09:30.875 --> 00:09:34.287
+software que lo cambió todo hacia finales de la década del noventa y que
+
+00:09:34.287 --> 00:09:39.037
+se animó a prestarle batalla ni más ni menos que a Sony. Nos referimos
+
+00:09:39.037 --> 00:09:44.812
+a Bleem!, un emulador de juegos de PlayStation para PC. Bleem! se lanzó en
+
+00:09:44.812 --> 00:09:50.900
+1999 y fue todo un suceso para la época. No solo por sus capacidades
+
+00:09:50.900 --> 00:09:55.237
+técnicas a la hoja de ejecutar juegos de la PlayStation original en un ordenador,
+
+00:09:55.237 --> 00:09:58.968
+sino también por su modelo comercial y de distribución.
+
+00:09:59.068 --> 00:10:04.872
+De Hipertextual: Linux está más cerca que nunca de ejecutar aplicaciones de macOS.
+
+00:10:04.972 --> 00:10:09.122
+Ejecutar aplicaciones de Windows en Linux ha dejado de ser un problema gracias a
+
+00:10:09.122 --> 00:10:14.722
+Wine, pero no podemos decir lo mismo de macOS. Si bien existen proyectos como
+
+00:10:14.722 --> 00:10:19.459
+Darling, que no requieren el uso de una máquina virtual, el soporte todavía es
+
+00:10:19.459 --> 00:10:25.434
+experimental. Debido a ello, un desarrollador ha decidido abordar el problema con un enfoque
+
+00:10:25.434 --> 00:10:30.259
+diferente: cargar el kernel de macOS en Linux para que ambos sistemas compartan el
+
+00:10:30.259 --> 00:10:36.884
+mismo hardware. Conocido como XNU Linux, este proyecto de código abierto compila el kernel
+
+00:10:36.884 --> 00:10:42.528
+XNU de macOS y lo ejecuta como un módulo dentro del sistema operativo libre.
+
+00:10:42.628 --> 00:10:47.865
+De Hipertextual: Cómo reunir todos tus juegos de Epic Games, GOG y Amazon en
+
+00:10:47.865 --> 00:10:51.912
+una sola aplicación para Windows, Mac y Linux.
+
+00:10:52.012 --> 00:10:55.299
+El juego en PC vive una época dorada en la que cuesta elegir a
+
+00:10:55.299 --> 00:11:00.887
+qué juego jugar ante tanta oferta disponible. Para bien o para mal, han proliferado
+
+00:11:00.887 --> 00:11:04.674
+tiendas de juegos digitales por doquier en las que resulta muy fácil comprar un
+
+00:11:04.674 --> 00:11:11.162
+título, descargarlo e instalarlo en tu ordenador. Además, tal es la competencia que abundan
+
+00:11:11.162 --> 00:11:17.374
+las ofertas, descuentos y, de vez en cuando, regalos en forma de juegos gratis.
+
+00:11:17.374 --> 00:11:21.912
+Así que para poner un poco de orden, han surgido lanzadores compatibles con esas
+
+00:11:21.912 --> 00:11:30.312
+tiendas, como Heroic Games Launcher. O, sencillamente, Heroic. El otro día expliqué cómo añadir
+
+00:11:30.312 --> 00:11:36.336
+juegos a Steam de otras tiendas, como Epic Games, GOG y tantas otras.
+
+00:11:36.436 --> 00:11:42.072
+De Hipertextual: El padre de PlayStation confiesa cómo ayudó a crear Xbox.
+
+00:11:42.172 --> 00:11:48.147
+La rivalidad entre PlayStation y Xbox ha marcado a varias generaciones de jugadores. Pese
+
+00:11:48.147 --> 00:11:54.672
+a que Sony tomó la delantera, Microsoft todavía intenta recuperar terreno y volverse competitiva.
+
+00:11:54.672 --> 00:11:59.884
+Curiosamente, el padre de PlayStation podría haber contribuido a que se gestara esta rivalidad
+
+00:11:59.884 --> 00:12:04.897
+en sus primeros años. Ken Kutaragi, una de las mentes detrás del éxito de
+
+00:12:04.897 --> 00:12:09.872
+PlayStation, afirmó en una entrevista que influyó en el lanzamiento de la primera consola
+
+00:12:09.872 --> 00:12:15.884
+Xbox. En el marco del evento Game Republic New Horizons, el padre de PlayStation
+
+00:12:15.884 --> 00:12:19.572
+le dijo a The Game Business que todo comenzó antes de que Microsoft decidiera
+
+00:12:19.572 --> 00:12:22.464
+entrar en la industria de las consolas.
+
+00:12:22.564 --> 00:12:27.351
+De Infobae: No fue solo Jensen Huang: el otro ejecutivo de Nvidia con una
+
+00:12:27.351 --> 00:12:30.408
+relación que hoy investiga el FBI.
+
+00:12:30.508 --> 00:12:35.008
+El FBI puso la mira en Cenly Chen, exejecutiva de Super Micro Computer y
+
+00:12:35.008 --> 00:12:40.308
+esposa de Jay Puri, asesor sénior de Nvidia, en la investigación por servidores con
+
+00:12:40.308 --> 00:12:45.420
+chips de inteligencia artificial que habrían sido enviados ilegalmente a China, según informó el
+
+00:12:45.420 --> 00:12:50.533
+miércoles The Wall Street Journal. La historia tiene un trasfondo personal que llama la
+
+00:12:50.533 --> 00:12:56.945
+atención: Puri y Chen sostuvieron una relación sentimental durante años. Mientras él controlaba la
+
+00:12:56.945 --> 00:13:02.445
+distribución de los procesadores más avanzados de la compañía de Santa Clara, California, ella
+
+00:13:02.445 --> 00:13:07.728
+supuestamente presionaba desde la fabricante de servidores para obtener ese suministro.
+
+00:13:07.828 --> 00:13:12.965
+De Infobae: El experimento que usa IA para descubrir “si existe una fuerza extraña
+
+00:13:12.965 --> 00:13:14.664
+en el universo”.
+
+00:13:14.764 --> 00:13:19.951
+A 100 metros de profundidad, entre Francia y Suiza, tiene lugar el experimento más grande
+
+00:13:19.951 --> 00:13:25.751
+de la Tierra. Se trata del Gran Colisionador de Hadrones (LHC), un anillo de
+
+00:13:25.751 --> 00:13:31.826
+27 kilómetros donde los físicos hacen chocar protones (partículas más pequeñas que un átomo) a
+
+00:13:31.826 --> 00:13:36.751
+casi a la velocidad de la luz. Estas colisiones producen partículas que no se
+
+00:13:36.751 --> 00:13:42.120
+encuentran libres en la naturaleza y que pueden revelar los mayores secretos del universo.
+
+00:13:42.220 --> 00:13:46.645
+De Infobae: Pinterest permitirá que los padres limiten el contenido de IA en las
+
+00:13:46.645 --> 00:13:49.176
+recomendaciones de sus hijos.
+
+00:13:49.276 --> 00:13:54.726
+Pinterest permitirá que los padres ajusten la cantidad de contenido generado con inteligencia artificial
+
+00:13:54.726 --> 00:13:59.876
+que aparece en las recomendaciones de sus hijos adolescentes. La empresa lo anunció el
+
+00:13:59.876 --> 00:14:05.101
+23 de noviembre junto con otros controles parentales, reunidos ahora en una página única
+
+00:14:05.101 --> 00:14:11.288
+dentro de la aplicación. La opción figura entre tres ajustes nuevos. Los otros dos
+
+00:14:11.288 --> 00:14:16.863
+permiten regular el volumen de las notificaciones (las del teléfono, el navegador, el correo
+
+00:14:16.863 --> 00:14:21.188
+y la propia aplicación) y decidir si los videos se reproducen solos al aparecer
+
+00:14:21.188 --> 00:14:26.863
+en pantalla. Según el comunicado de Pinterest, todos los ajustes de la página quedan
+
+00:14:26.863 --> 00:14:29.616
+protegidos por un código parental.
+
+00:14:29.716 --> 00:14:36.000
+De Infobae: Cómo alargar la batería de mi celular Android: los 8 consejos de Google.
+
+00:14:36.100 --> 00:14:40.037
+Reducir el brillo de la pantalla es una de las medidas que Google recomienda
+
+00:14:40.037 --> 00:14:46.462
+para aprovechar mejor la batería de un celular Android. Este ajuste, aunque parece sencillo,
+
+00:14:46.462 --> 00:14:49.775
+es útil en momentos en los que se necesita extender la duración de la
+
+00:14:49.775 --> 00:14:54.462
+carga y no se tiene acceso a un cargador ni a una batería portátil.
+
+00:14:54.462 --> 00:14:58.962
+Google reúne otras siete configuraciones que pueden ayudar a que la batería dure más
+
+00:14:58.962 --> 00:15:05.087
+tiempo. Algunas solo están disponibles en dispositivos con Android 13 o versiones posteriores y su
+
+00:15:05.087 --> 00:15:08.904
+funcionamiento puede variar según el modelo de teléfono.
+
+00:15:09.004 --> 00:15:16.128
+De Infobae: La inteligencia artificial rescató del olvido 33 materiales que podrían definir el futuro.
+
+00:15:16.228 --> 00:15:22.490
+La inteligencia artificial puede encontrar pistas nuevas en datos científicos que ya estaban disponibles.
+
+00:15:22.490 --> 00:15:28.353
+Un equipo de la Universidad de Linköping, en Suecia, analizó registros históricos sobre materiales
+
+00:15:28.353 --> 00:15:33.765
+y detectó 33 compuestos ultradelgados que se habían fabricado antes, pero que nunca se habían
+
+00:15:33.765 --> 00:15:40.178
+clasificado como MXenes. Los MXenes son materiales formados por pocas capas de átomos, una
+
+00:15:40.178 --> 00:15:45.253
+estructura que les confiere una superficie muy amplia en relación con su masa. Esa
+
+00:15:45.253 --> 00:15:51.590
+característica los hace interesantes para almacenar energía, filtrar agua o desarrollar tecnologías de comunicación
+
+00:15:51.590 --> 00:15:53.376
+y biomedicina.
+
+00:15:53.476 --> 00:15:59.616
+De MuyComputer: Windows 11 ofrece un controlador de Intel que Defender considera peligroso.
+
+00:15:59.716 --> 00:16:04.366
+Se supone que Windows Update y Microsoft Defender trabajan en el mismo equipo: uno
+
+00:16:04.366 --> 00:16:09.891
+instala controladores y actualizaciones, y el otro impide que los componentes peligrosos comprometan la
+
+00:16:09.891 --> 00:16:16.616
+seguridad del ordenador. Pero una investigación ha descubierto una contradicción preocupante en Windows 11:
+
+00:16:16.616 --> 00:16:22.328
+Windows Update sigue ofreciendo un paquete antiguo de Intel relacionado con WinRing0, un controlador
+
+00:16:22.328 --> 00:16:28.203
+que Defender considera vulnerable. El hallazgo se produjo en un miniordenador Intel NUC de
+
+00:16:28.203 --> 00:16:34.536
+undécima generación, donde el antivirus detectó OpenHardwareMonitorLib.sys como una amenaza.
+
+00:16:34.636 --> 00:16:40.248
+De MuyComputer: Silksong se hace a la mar: Sea of Sorrow llega gratis.
+
+00:16:40.348 --> 00:16:45.448
+Después de años esperando la llegada de Hollow Knight: Silksong, sus jugadores no tendrán
+
+00:16:45.448 --> 00:16:50.485
+que armarse de tanta paciencia para disfrutar de la siguiente aventura de Hornet. Team
+
+00:16:50.485 --> 00:16:55.123
+Cherry ha puesto fecha a Sea of Sorrow, la primera gran expansión del juego:
+
+00:16:55.123 --> 00:17:01.923
+llegará el 11 de diciembre de 2026 y será completamente gratuita. El anuncio se produjo durante
+
+00:17:01.923 --> 00:17:06.398
+la presentación Cherry Time!, acompañada de un tráiler que lleva la acción lejos de
+
+00:17:06.398 --> 00:17:12.173
+los escenarios más conocidos de Pharloom. Y, después del fenómeno que supuso el lanzamiento
+
+00:17:12.173 --> 00:17:16.623
+de Silksong, con millones de copias vendidas en sus primeros días, parece que sus
+
+00:17:16.623 --> 00:17:19.776
+creadores todavía tienen mucho que enseñar.
+
+00:17:19.876 --> 00:17:25.776
+De MuyComputer: Prime Video mejora clásicos con IA, pero no todo es nitidez.
+
+00:17:25.876 --> 00:17:29.701
+Hay películas y series que llegan a las plataformas de streaming en copias cuya
+
+00:17:29.701 --> 00:17:36.638
+calidad deja bastante que desear, especialmente cuando se reproducen en televisores actuales. Prime Video
+
+00:17:36.638 --> 00:17:41.613
+quiere darles una segunda vida con ayuda de la inteligencia artificial: desde el 25
+
+00:17:41.613 --> 00:17:46.551
+de noviembre ofrece en alta definición más de 60 producciones clásicas de MGM que hasta
+
+00:17:46.551 --> 00:17:53.263
+ahora solo estaban disponibles en definición estándar. Entre ellas figuran la película Stolen Hours,
+
+00:17:53.263 --> 00:18:00.213
+de 1963, y episodios de la serie policiaca Highway Patrol, de los años cincuenta.
+
+00:18:00.213 --> 00:18:05.463
+Amazon asegura que las nuevas versiones ofrecen imágenes más nítidas y colores más fieles,
+
+00:18:05.463 --> 00:18:09.072
+y ampliará la colección durante 2027.
+
+00:18:09.172 --> 00:18:14.647
+De Wired en español: Las turbulencias aéreas eran casi imposibles de predecir, pero la
+
+00:18:14.647 --> 00:18:17.064
+IA ya está cambiando eso.
+
+00:18:17.164 --> 00:18:21.739
+El “problema más difícil que queda por resolver en la física clásica” recibe un
+
+00:18:21.739 --> 00:18:27.964
+impulso gracias a terabytes de datos obtenidos mediante colaboración colectiva. También a nuevas formas
+
+00:18:27.964 --> 00:18:32.496
+de utilizar el aprendizaje automático y la inteligencia artificial.
+
+00:18:32.596 --> 00:18:37.896
+De Wired en español: Los centros de datos irrumpen en la campaña electoral española:
+
+00:18:37.896 --> 00:18:41.688
+qué proponen los partidos sobre IA y redes sociales.
+
+00:18:41.788 --> 00:18:46.513
+Los centros de datos irrumpen en el debate electoral español, mientras los partidos exhiben
+
+00:18:46.513 --> 00:18:51.792
+sus diferencias sobre la regulación de la inteligencia artificial y las redes sociales.
+
+00:18:51.892 --> 00:18:56.204
+De Xataka: El OPPO Find X9 es el mejor móvil de gama alta de
+
+00:18:56.204 --> 00:19:01.292
+2026 sin apellidarse Pro ni Ultra porque la gama alta también necesita saber dónde
+
+00:19:01.292 --> 00:19:02.568
+parar.
+
+00:19:02.668 --> 00:19:06.793
+La evolución de la telefonía móvil ha ido pareja a la mejora y miniaturización
+
+00:19:06.793 --> 00:19:13.955
+de los componentes electrónicos. ¿Sale un chip mejor? Tenemos una nueva oleada de teléfonos,
+
+00:19:13.955 --> 00:19:19.855
+algo que ocurre cada año. Con un añadido: para sobresalir, los fabricantes han ido
+
+00:19:19.855 --> 00:19:25.818
+sumando nombres para así destacar sus mejores teléfonos. Los apellidos Max o Ultra coronan
+
+00:19:25.818 --> 00:19:27.360
+la tabla.
+
+00:19:27.460 --> 00:19:33.110
+De Xataka: Ciberataque a SAP, la mayor empresa de software de Europa: el verdadero
+
+00:19:33.110 --> 00:19:35.400
+peligro está en el código.
+
+00:19:35.500 --> 00:19:39.737
+El software de SAP no es tan conocido ni tan utilizado como Outlook, pero
+
+00:19:39.737 --> 00:19:45.375
+sus aplicaciones mueven la contabilidad de media Europa. Pues bien, la empresa alemana ha
+
+00:19:45.375 --> 00:19:52.037
+confirmado que "había detectado actividad sospechosa", tal y como adelantaba Der Spiegel el jueves.
+
+00:19:52.037 --> 00:19:55.612
+Al parecer, el riesgo no está en lo que se han llevado, sino en
+
+00:19:55.612 --> 00:20:01.925
+lo que pueden haber dejado en GitHub. Qué ha pasado. Reuters recogía la declaración
+
+00:20:01.925 --> 00:20:05.875
+de SAP en el que identificaba esa actividad sospechosa y cómo ha puesto cerco
+
+00:20:05.875 --> 00:20:11.587
+a posibles daños: "Según nuestra investigación hasta la fecha, no hemos encontrado ninguna evidencia
+
+00:20:11.587 --> 00:20:15.840
+de acceso no autorizado a los datos comerciales de los clientes".
+
+00:20:15.940 --> 00:20:21.565
+De Genbeta: Iker, ingeniero español trabajando en Suiza: "Decidí irme de España y cobraba
+
+00:20:21.565 --> 00:20:27.024
+50.000 € al año; el ahorro que puedo tener es mayor al que tenía allí".
+
+00:20:27.124 --> 00:20:31.874
+Iker es ingeniero de software, tiene tres años de experiencia y en España cobraba
+
+00:20:31.874 --> 00:20:38.086
+50.000 euros brutos al año. No era precisamente un mal sueldo, pero aun así decidió
+
+00:20:38.086 --> 00:20:45.574
+dejar su trabajo y marcharse a Suiza. ¿El motivo? Quería mejorar sus condiciones económicas,
+
+00:20:45.574 --> 00:20:49.061
+aunque también había otras cosas de su vida en España que no terminaban de
+
+00:20:49.061 --> 00:20:56.061
+convencerle. "No voy a ser hipócrita, evidentemente el factor salarial fue algo bastante importante",
+
+00:20:56.061 --> 00:21:00.786
+reconoce en un vídeo de su cuenta de TikTok (@ikerdiazj), del que también se
+
+00:21:00.786 --> 00:21:06.111
+ha hecho eco El Confidencial. Iker sabía que Suiza era un país caro, pero
+
+00:21:06.111 --> 00:21:09.384
+al hacer cuentas vio que podía salir ganando.
+
+00:21:09.484 --> 00:21:13.512
+Ahora, las noticias en inglés, para practicar.
+
+00:21:13.617 --> 00:21:16.584
+And now, the news in English.
+
+00:21:16.689 --> 00:21:19.320
+Artificial intelligence.
+
+00:21:19.425 --> 00:21:25.675
+From ZDNet: I found a DualSense deal that knocks 28% off this wireless PlayStation
+
+00:21:25.675 --> 00:21:27.312
+controller.
+
+00:21:27.417 --> 00:21:33.056
+The basic white variant is down to a record-low $54 for Black Friday, with
+
+00:21:33.056 --> 00:21:36.408
+plenty of other colors also on sale.
+
+00:21:36.513 --> 00:21:42.768
+From OpenAI: Clay helps sales teams win with Codex and ChatGPT.
+
+00:21:42.873 --> 00:21:49.512
+ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market
+
+00:21:49.512 --> 00:21:54.336
+plays, with GPT-6 models handling the reasoning.
+
+00:21:54.441 --> 00:22:02.880
+From Hugging Face: Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference.
+
+00:22:02.985 --> 00:22:08.280
+From Simon Willison: datasette-charts 0.4a0.
+
+00:22:08.385 --> 00:22:15.246
+Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook
+
+00:22:15.246 --> 00:22:20.038
+to allow other plugins to define new chart types, but I hadn't actually used
+
+00:22:20.038 --> 00:22:26.571
+it for anything yet. I had Claude Opus 5.5 build an experimental plugins just
+
+00:22:26.571 --> 00:22:29.613
+to try out the hook and it came up with a bunch of friction
+
+00:22:29.613 --> 00:22:35.849
+points in the design. This release addresses those, which should make building additional chart
+
+00:22:35.849 --> 00:22:41.710
+plugins a whole lot more ergonomic. I've also added a website for the plugin,
+
+00:22:41.710 --> 00:22:49.946
+at charts.datasette.io. The new website includes a tutorial for plugin authors, and a gallery
+
+00:22:49.946 --> 00:22:54.918
+showing all of the core charts and annotations, each one linking to an interactive
+
+00:22:54.918 --> 00:22:57.672
+demo on Datasette Lite.
+
+00:22:57.777 --> 00:23:01.224
+Google, Microsoft and NVIDIA.
+
+00:23:01.329 --> 00:23:06.336
+From The Verge: Yooka-Laylee’s free upgrade is skipping Xbox.
+
+00:23:06.441 --> 00:23:12.261
+Playtronic Games is getting ready to launch Yooka-Laylee and the Impossible Lair: Definitive Edition
+
+00:23:12.261 --> 00:23:19.961
+as a free update on PlayStation 5, Switch 2, and PC on December 15th. Unfortunately
+
+00:23:19.961 --> 00:23:25.488
+for Xbox owners, the developer says it "can't commit to any additional platforms for
+
+00:23:25.488 --> 00:23:32.044
+the foreseeable future." In a statement posted on X, Playtronic said that it understands
+
+00:23:32.044 --> 00:23:37.461
+the frustration some players may feel, but that bringing the Definitive Edition to Xbox
+
+00:23:37.461 --> 00:23:42.988
+just isn't viable "given the technological challenges and costs," and reminded people that they're
+
+00:23:42.988 --> 00:23:49.849
+a small team. Hi everyone, please read the following regarding the situation for Yooka-Laylee
+
+00:23:49.849 --> 00:23:54.240
+and the … Read the full story at The Verge.
+
+00:23:54.345 --> 00:24:00.526
+From NVIDIA Developer: Q&A: How Everstone Brings Where Winds Meet to Life with NVIDIA
+
+00:24:00.526 --> 00:24:02.880
+DLSS 5.
+
+00:24:02.985 --> 00:24:09.138
+Where Winds Meet moves between distant mountain landscapes, bustling streets, and quiet moments with
+
+00:24:09.138 --> 00:24:16.227
+its characters. For Everstone Studio, bringing more realistic lighting and materials to this wuxia
+
+00:24:16.227 --> 00:24:24.643
+world means keeping its aesthetics, recognizable characters, and carefully composed atmosphere intact. The team’s
+
+00:24:24.643 --> 00:24:30.792
+ongoing work with NVIDIA DLSS and Streamline provided a foundation for…
+
+00:24:30.897 --> 00:24:32.688
+Python.
+
+00:24:32.793 --> 00:24:39.624
+From Real Python: Quiz: What Are Python Asterisk and Slash Special Parameters For?
+
+00:24:39.729 --> 00:24:44.660
+In this quiz, you’ll test your understanding of What Are Python Asterisk and Slash
+
+00:24:44.660 --> 00:24:51.068
+Special Parameters For?. By working through this quiz, you’ll revisit how the bare asterisk
+
+00:24:51.068 --> 00:24:59.290
+and the slash split a function’s parameters into positional-only, positional-or-keyword, and keyword-only groups. You’ll
+
+00:24:59.290 --> 00:25:03.457
+also review how they relate to *args and how they help you keep
+
+00:25:03.457 --> 00:25:09.971
+your functions backward compatible. [ Improve Your Python With Python Tricks – Get a short &
+
+00:25:09.971 --> 00:25:15.624
+sweet Python Trick delivered to your inbox every couple of days. >> Click here to
+
+00:25:15.624 --> 00:25:18.312
+learn more and see examples ]
+
+00:25:18.417 --> 00:25:20.184
+Linux.
+
+00:25:20.289 --> 00:25:29.232
+From OMG! Ubuntu: Framework’s $99 Wireless Touchpad Keyboard is up for pre-order.
+
+00:25:29.337 --> 00:25:35.032
+Framework is better known for its repair-friendly laptops, but it’s branching out into peripherals
+
+00:25:35.032 --> 00:25:41.454
+too – the Wireless Touchpad Keyboard is now up for pre-order. The company announced a
+
+00:25:41.454 --> 00:25:47.995
+compact keyboard earlier this year. Like its laptops, this is made with repairability in
+
+00:25:47.995 --> 00:25:55.468
+mind, CAD designs available and open-source ZMK firmware, so owners customise and remap using
+
+00:25:55.468 --> 00:26:03.023
+the browser-based ZMK Studio tool. It also includes some touches that make it versatile.
+
+00:26:03.023 --> 00:26:10.107
+Wireless Touchpad Keyboard Framework pitches its Wireless Touchpad Keyboard as a “compact, sturdy keyboard
+
+00:26:10.107 --> 00:26:15.984
+for your media PC, Raspberry Pi, or any computer across the room”.
+
+00:26:16.089 --> 00:26:18.696
+GitHub repositories.
+
+00:26:18.801 --> 00:26:22.080
+Repository odoo, by odoo.
+
+00:26:22.185 --> 00:26:27.120
+Odoo. Open Source Apps To Grow Your Business.
+
+00:26:27.225 --> 00:26:31.608
+Repository agentscope, by agentscope-ai.
+
+00:26:31.713 --> 00:26:36.456
+Build and run agents you can see, understand and trust.
+
+00:26:36.561 --> 00:26:41.040
+Repository paper orchestra, by google-research.
+
+00:26:41.145 --> 00:26:47.544
+PaperOrchestra is a multi-agent framework for automated AI research paper writing.
+
+00:26:47.649 --> 00:26:51.984
+That's all for today. See you tomorrow.
+
+00:26:52.084 --> 00:26:56.659
+Eso es todo por hoy en Radio Tecno. Los enlaces y el texto están
+
+00:26:56.659 --> 00:27:00.720
+en las notas del episodio. Hasta mañana.

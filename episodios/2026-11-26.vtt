@@ -1,0 +1,1171 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:08.425
+Hola. Esto es Radio Tecno, jueves 26 de noviembre. Hoy hay 25 noticias en español y 25 en
+
+00:00:08.425 --> 00:00:09.936
+inglés.
+
+00:00:10.036 --> 00:00:13.056
+Primero, las noticias en español.
+
+00:00:13.156 --> 00:00:15.600
+Inteligencia artificial.
+
+00:00:15.700 --> 00:00:21.120
+De Xataka: La inseguridad se ha convertido en una condición estructural de Internet.
+
+00:00:21.220 --> 00:00:26.457
+Llevo años escuchando la cantinela de que la ciberseguridad es, sobre todo, un problema
+
+00:00:26.457 --> 00:00:33.282
+técnico. Lo primero que nos dicen los expertos es instalar actualizaciones, usar contraseñas complejas
+
+00:00:33.282 --> 00:00:38.520
+y distintas, activar la verificación en dos pasos, y, en el caso de negocios,
+
+00:00:38.520 --> 00:00:43.532
+contratar a alguien que sepa lo que hace con tus sistemas. Siguen siendo consejos
+
+00:00:43.532 --> 00:00:48.507
+razonables y muy recomendables. Lo que pasa es que parece que ya no son
+
+00:00:48.507 --> 00:00:53.757
+suficientes. Estoy convencido de que la seguridad digital ya no es una estado al
+
+00:00:53.757 --> 00:00:58.657
+que se llega, sino una carrera sin línea de meta. Y con la inteligencia
+
+00:00:58.657 --> 00:01:04.270
+artificial, la velocidad de esa carrera ha subido a lo bestia. Ojo, la IA
+
+00:01:04.270 --> 00:01:06.504
+no ha inventado el hackeo.
+
+00:01:06.604 --> 00:01:12.404
+De Xataka: Hace un año instalé OpenClaw y he matado más agentes que Tamagotchis.
+
+00:01:12.404 --> 00:01:15.432
+Sigo convencido de que cambió la IA.
+
+00:01:15.532 --> 00:01:19.907
+Pocos cambios han sido tan bruscos, y a la vez tan progresivos, como el
+
+00:01:19.907 --> 00:01:25.357
+que ha traído la IA. Darle conversación a ChatGPT se ha vuelto una rutina,
+
+00:01:25.357 --> 00:01:31.144
+igual que generar una imagen sintética o crear una aplicación sin saber programar. Son
+
+00:01:31.144 --> 00:01:36.169
+tareas que no podíamos ejecutar hace cuatro o cinco años. Y creo que hay
+
+00:01:36.169 --> 00:01:40.782
+un elemento que va camino de redondear ese extra de capacidades que hemos ganado:
+
+00:01:40.782 --> 00:01:46.482
+el agente de IA autónomo. Soy un firme defensor de los agentes locales, aquellos
+
+00:01:46.482 --> 00:01:51.382
+que viven en el ordenador del usuario. Por eso me instalé OpenClaw cuando salió
+
+00:01:51.382 --> 00:01:57.119
+hace un año (por aquel entonces aún se llamaba Clawdbot). Estaba armando mucho revuelo
+
+00:01:57.119 --> 00:02:01.176
+en mi círculo tech y me decidí a darle una oportunidad.
+
+00:02:01.276 --> 00:02:06.426
+De Xataka: Hay un modelo de IA local que está causando furor. Se llama
+
+00:02:06.426 --> 00:02:10.512
+Inkling 2 Mini y tenemos sorpresa: no es chino.
+
+00:02:10.612 --> 00:02:15.849
+El pasado 5 de noviembre Thinking Machines Lab, la startup de Mira Murati, presentaba
+
+00:02:15.849 --> 00:02:21.174
+su modelo Inkling 2 Mini sin demasiada fanfarria. En tan solo tres semanas el
+
+00:02:21.174 --> 00:02:25.124
+modelo se ha convertido en una de las sensaciones de los expertos en IA,
+
+00:02:25.124 --> 00:02:30.974
+y hay buenas razones para ello. Es bueno, es bonito, es barato, y además
+
+00:02:30.974 --> 00:02:37.374
+es muy, pero que muy local. Sorpresa. Cuando aparecieron en escena las startups de
+
+00:02:37.374 --> 00:02:43.374
+Ilya Sutskever (Safe Superintelligence) y Mira Murati (Thinking Machines Lab) en la primavera de
+
+00:02:43.374 --> 00:02:49.464
+2025, no muchos parecían confiar en que esos proyectos llegaran a buen puerto.
+
+00:02:49.564 --> 00:02:54.351
+De WWWhat's new: Foto de perfil profesional con IA para LinkedIn o el CV:
+
+00:02:54.351 --> 00:02:58.848
+qué opciones hay, qué permite LinkedIn y qué pasa con tu cara.
+
+00:02:58.948 --> 00:03:03.698
+Puedes conseguir una foto de perfil profesional con IA por tres caminos: un generador
+
+00:03:03.698 --> 00:03:08.460
+que crea retratos a partir de varios selfies, un chatbot como Gemini o ChatGPT
+
+00:03:08.460 --> 00:03:11.748
+que retoca el fondo y la luz de una foto tuya, o una app
+
+00:03:11.748 --> 00:03:17.335
+del móvil. El límite no es técnico, sino de identidad: LinkedIn exige que la
+
+00:03:17.335 --> 00:03:21.998
+foto te represente y que se te reconozca. Si en la entrevista apareces con
+
+00:03:21.998 --> 00:03:27.098
+otra cara, el retrato ha jugado en tu contra. La pregunta útil no es
+
+00:03:27.098 --> 00:03:31.410
+qué herramienta da el resultado más espectacular, sino cuál cambia menos de ti y
+
+00:03:31.410 --> 00:03:38.023
+qué hace después con tus fotos. LinkedIn admite retratos editados e incluso dibujos, siempre
+
+00:03:38.023 --> 00:03:42.160
+que se te reconozca. Lo que no admite es una imagen que no sea
+
+00:03:42.160 --> 00:03:43.584
+tu cara.
+
+00:03:43.684 --> 00:03:47.921
+De WWWhat's new: Te han entrado en el correo: las reglas de reenvío y
+
+00:03:47.921 --> 00:03:53.121
+los filtros ocultos que deja el atacante, y cómo revisarlos en Gmail, Outlook.com y
+
+00:03:53.121 --> 00:03:54.624
+Movistar.
+
+00:03:54.724 --> 00:03:58.924
+Cambiar la contraseña después de que alguien entre en tu correo es necesario, pero
+
+00:03:58.924 --> 00:04:05.461
+no suficiente. Un atacante con unos minutos dentro puede dejar configurado un reenvío automático,
+
+00:04:05.461 --> 00:04:09.399
+un filtro que manda ciertos mensajes a otra dirección o los archiva donde no
+
+00:04:09.399 --> 00:04:14.674
+miras, un delegado con acceso a tu buzón o un método de recuperación suyo.
+
+00:04:14.674 --> 00:04:20.536
+Nada de eso depende de tu contraseña, así que sigue funcionando después de cambiarla.
+
+00:04:20.536 --> 00:04:26.686
+Hay que buscarlo a mano. No es una hipótesis de laboratorio. El FBI advirtió
+
+00:04:26.686 --> 00:04:32.249
+en noviembre de 2020, en una nota para empresas, de que los delincuentes creaban reglas de
+
+00:04:32.249 --> 00:04:36.436
+reenvío en la versión web del correo de sus víctimas para leer sus conversaciones
+
+00:04:36.436 --> 00:04:38.376
+y desviar pagos.
+
+00:04:38.476 --> 00:04:43.576
+De WWWhat's new: Convertir una tele antigua en smart: qué aparato elegir hoy, qué
+
+00:04:43.576 --> 00:04:47.112
+tiene que tener tu televisor y cuándo no compensa.
+
+00:04:47.212 --> 00:04:51.762
+Si tu tele tiene una entrada HDMI y la imagen sigue siendo buena, un
+
+00:04:51.762 --> 00:04:57.124
+reproductor externo la convierte en smart por bastante menos que una tele nueva. Pero
+
+00:04:57.124 --> 00:05:01.674
+no todos los aparatos sirven para todos los televisores: para ver contenido en 4K
+
+00:05:01.674 --> 00:05:06.549
+la entrada tiene que admitir HDCP 2.2, el mando solo controlará la
+
+00:05:06.549 --> 00:05:11.699
+tele si funciona el CEC, y algunos modelos ya no son los que recuerdas.
+
+00:05:11.699 --> 00:05:15.687
+El Chromecast que todo el mundo cita, por ejemplo, ya no se vende en
+
+00:05:15.687 --> 00:05:19.899
+la tienda de Google en España. Esta guía repasa qué hay hoy en el
+
+00:05:19.899 --> 00:05:23.874
+mercado, qué debes comprobar en tu televisor antes de comprar y en qué casos
+
+00:05:23.874 --> 00:05:27.456
+el dinero está mejor guardado para una tele nueva.
+
+00:05:27.556 --> 00:05:30.576
+Google, Microsoft y NVIDIA.
+
+00:05:30.676 --> 00:05:36.151
+De Xataka: Jensen Huang ha vuelto a Nvidia entre aplausos, disculpas y terapia: la
+
+00:05:36.151 --> 00:05:39.696
+sucesión de su CEO sigue siendo un asunto tabú.
+
+00:05:39.796 --> 00:05:45.071
+El de ayer no fue un martes cualquiera para Nvidia. Sus empleados esperaban nerviosos
+
+00:05:45.071 --> 00:05:48.546
+a Jensen Huang en las escaleras y balcones de la sede de Nvidia en
+
+00:05:48.546 --> 00:05:54.208
+Santa Clara. Al verlo llegar, la plantilla de Nvidia se deshizo en aplausos y,
+
+00:05:54.208 --> 00:06:01.046
+tal como recogía el Wall Street Journal, gritaron "¡Te queremos, Jensen!". Habían pasado 11 días
+
+00:06:01.046 --> 00:06:06.908
+desde su renuncia y el consejo acababa de reincorporarlo como CEO. Huang pidió disculpas
+
+00:06:06.908 --> 00:06:12.133
+ante toda la plantilla, contó que va a terapia y prometió moderar su carácter.
+
+00:06:12.133 --> 00:06:16.833
+Pero hubo un tema en el que no cedió: quién le sustituirá algún día.
+
+00:06:16.833 --> 00:06:23.371
+Para asumir su sucesión el directivo necesitará algunas sesiones de terapia extra. Perdón, terapia
+
+00:06:23.371 --> 00:06:24.936
+y examen.
+
+00:06:25.036 --> 00:06:30.548
+De Xataka: Donald Trump presionó para que Jensen Huang regresara a Nvidia, acto seguido
+
+00:06:30.548 --> 00:06:34.248
+ganó hasta 15 millones de dólares en acciones.
+
+00:06:34.348 --> 00:06:38.485
+Sabíamos que Donald Trump tenía mucho que ganar con el regreso de Jensen Huang
+
+00:06:38.485 --> 00:06:43.523
+como CEO de Nvidia. En la guerra de chips contra China, Nvidia y Huang
+
+00:06:43.523 --> 00:06:48.485
+son claros aliados de EEUU, así que la cuestión geopolítica está fuera de toda
+
+00:06:48.485 --> 00:06:53.135
+duda. Lo que es llamativo es que Trump también tiene un paquete de, al
+
+00:06:53.135 --> 00:06:58.585
+menos, 370.000 acciones de Nvidia, por lo que a su bolsillo también le interesaba esta
+
+00:06:58.585 --> 00:07:04.835
+noticia. De hecho, según las estimaciones publicadas a partir de las declaraciones financieras de
+
+00:07:04.835 --> 00:07:10.360
+Donald Trump, el presidente de EEUU podría haber ganado hasta 15 millones de dólares con
+
+00:07:10.360 --> 00:07:14.523
+la subida de las acciones de la compañía tras impulsar personalmente su vuelta como
+
+00:07:14.523 --> 00:07:18.432
+CEO. Y eso solo en el día de ayer.
+
+00:07:18.532 --> 00:07:20.304
+Linux.
+
+00:07:20.404 --> 00:07:26.129
+De MuyLinux: Canonical trabaja en «un nuevo modo de interactuar con Ubuntu»: un lanzador
+
+00:07:26.129 --> 00:07:27.552
+con IA.
+
+00:07:27.652 --> 00:07:31.639
+Los planes de Canonical para la integración de IA en Ubuntu siguen adelante y
+
+00:07:31.639 --> 00:07:36.439
+la compañía ha detallado su próximo paso: un lanzador unificado concebido ni más ni
+
+00:07:36.439 --> 00:07:41.339
+menos que como « un nuevo modo de interactuar con Ubuntu ». ¿Un asistente de IA
+
+00:07:41.339 --> 00:07:48.127
+para el escritorio? A eso apunta este nuevo proyecto, con matices. Vaya por delante
+
+00:07:48.127 --> 00:07:52.427
+que la intención de no convertir la distribución en un producto de inteligencia artificial
+
+00:07:52.427 --> 00:07:56.677
+no ha cambiado; pero entre hacer de Ubuntu la Omarchy de Canonical y desaprovechar
+
+00:07:56.677 --> 00:08:02.089
+el potencial de la IA, hay un trecho. Se irá paso a paso, desarrollando
+
+00:08:02.089 --> 00:08:05.827
+e implementando las herramientas que se considere que pueden aportar un plus a la
+
+00:08:05.827 --> 00:08:08.184
+experiencia ya conocida.
+
+00:08:08.284 --> 00:08:13.146
+De MuyLinux: Tuxedo OS retrasa el lanzamiento de su edición basada en Debian a
+
+00:08:13.146 --> 00:08:15.240
+2027.
+
+00:08:15.340 --> 00:08:20.815
+Tuxedo Computers ha aplazado el lanzamiento de la nueva Tuxedo OS. La compañía ha
+
+00:08:20.815 --> 00:08:24.802
+anunciado que la versión final de su distribución basada en Debian Testing no verá
+
+00:08:24.802 --> 00:08:28.652
+la luz hasta el año que viene, que dicho así suena a mucho, pero
+
+00:08:28.652 --> 00:08:34.690
+queda poco más de un mes para recibir 2027. En todo caso, quienes esperaban
+
+00:08:34.690 --> 00:08:38.256
+para dar el salto tendrán que aguardar un poco más.
+
+00:08:38.356 --> 00:08:44.208
+De Linux Adictos: Peppermint OS Void estrena su primera edición con esta otra base.
+
+00:08:44.308 --> 00:08:48.745
+Peppermint OS Void ya está disponible como la primera edición de la distribución basada
+
+00:08:48.745 --> 00:08:53.533
+en Void Linux. El proyecto amplía así las bases sobre las que construye su
+
+00:08:53.533 --> 00:08:58.808
+sistema, hasta ahora centrado en Debian y Devuan, y ofrece una alternativa de actualización
+
+00:08:58.808 --> 00:09:04.533
+continua para quienes prefieren el ecosistema de Void. La nueva edición se publica inicialmente
+
+00:09:04.533 --> 00:09:10.495
+en formato Loaded, con un conjunto de aplicaciones y herramientas instaladas de antemano. El
+
+00:09:10.495 --> 00:09:15.333
+lanzamiento supone un cambio importante en la oferta de Peppermint OS, aunque sus responsables
+
+00:09:15.333 --> 00:09:20.088
+han aclarado que no tienen intención de abandonar las versiones existentes.
+
+00:09:20.188 --> 00:09:26.163
+De Linux Adictos: Valve lanza Proton 11.0-3: 15 juegos nuevos y corrige el
+
+00:09:26.163 --> 00:09:29.664
+HDR de Far Cry 5 en Steam Deck OLED.
+
+00:09:29.764 --> 00:09:34.464
+Valve ha publicado Proton 11.0-3 como nueva versión estable de su capa
+
+00:09:34.464 --> 00:09:41.176
+de compatibilidad para ejecutar juegos de Windows en Linux y SteamOS. La actualización, distribuida
+
+00:09:41.176 --> 00:09:45.964
+desde el 24 de noviembre, añade 15 títulos a la lista de jugables y llega
+
+00:09:45.964 --> 00:09:52.164
+con correcciones para equipos AMD, mandos y pantallas HDR. El cambio no se limita
+
+00:09:52.164 --> 00:10:01.351
+al número de versión: incorpora DXVK, VKD3D-Proton, Wine Mono, Xalia y FEX 2610 actualizados
+
+00:10:01.351 --> 00:10:06.614
+y resuelve regresiones de Proton 11. En Steam Deck o un PC con Linux,
+
+00:10:06.614 --> 00:10:10.889
+se notará en juegos que antes fallaban al arrancar, al reconocer un mando o
+
+00:10:10.889 --> 00:10:18.014
+al activar HDR. La lista de novedades incluye 15 títulos de géneros muy distintos. Hay
+
+00:10:18.014 --> 00:10:21.576
+simuladores como City Car Driving y Korea.
+
+00:10:21.676 --> 00:10:30.326
+De Ubunlog: System76 lanza Pop!_OS 26.04 LTS: COSMIC estrena temas Constellations
+
+00:10:30.326 --> 00:10:32.568
+y mejoras de usabilidad.
+
+00:10:32.668 --> 00:10:39.368
+System76 ha lanzado Pop!_OS 26.04 LTS, la nueva versión de su
+
+00:10:39.368 --> 00:10:45.705
+distribución Linux, con el escritorio COSMIC como pieza central. La actualización se presenta como
+
+00:10:45.705 --> 00:10:50.393
+una entrega de mejoras de interfaz y usabilidad, y añade los temas Constellations para
+
+00:10:50.393 --> 00:10:55.905
+cambiar el aspecto visual del sistema. La versión se identifica como LTS y llega
+
+00:10:55.905 --> 00:11:02.955
+como actualización oficial de la distribución. Junto a ella, COSMIC estrena Constellations, un conjunto
+
+00:11:02.955 --> 00:11:08.055
+de temas que permiten variar el estilo visual dentro del mismo entorno de escritorio.
+
+00:11:08.055 --> 00:11:14.143
+Pop!_OS es la distribución Linux de System76, la empresa que la desarrolla y
+
+00:11:14.143 --> 00:11:18.576
+que ha anunciado la versión 26.04 LTS.
+
+00:11:18.676 --> 00:11:20.712
+Más tecnología.
+
+00:11:20.812 --> 00:11:28.037
+De Hipertextual: Gemini Notebook (NotebookLM) lanza una función que ayuda a recordar información sin
+
+00:11:28.037 --> 00:11:29.760
+tanto esfuerzo.
+
+00:11:29.860 --> 00:11:33.972
+Google ha lanzado un cúmulo de funciones para Gemini Notebook que ayudarán a las
+
+00:11:33.972 --> 00:11:40.335
+personas que estudian o necesitan memorizar las cosas. La actualización más reciente añade soporte
+
+00:11:40.335 --> 00:11:46.610
+para imágenes en las tarjetas didácticas ( flashcards). Esto ayudará a que los usuarios comprendan
+
+00:11:46.610 --> 00:11:52.597
+mejor los conceptos combinando información textual y gráfica. De acuerdo con una publicación en
+
+00:11:52.597 --> 00:11:58.747
+su blog, las tarjetas didácticas ya pueden cargar elementos visuales desde las fuentes originales.
+
+00:11:58.747 --> 00:12:03.310
+Este agregado cambia el formato habitual de las flashcards, que se centraba en preguntas
+
+00:12:03.310 --> 00:12:05.424
+y respuestas de texto.
+
+00:12:05.524 --> 00:12:09.961
+De Hipertextual: Apple no tira la toalla con el iPad plegable, pero no te
+
+00:12:09.961 --> 00:12:12.288
+hagas muchas ilusiones.
+
+00:12:12.388 --> 00:12:17.350
+Los rumores de que Apple trabaja en un iPad plegable no son nuevos. Las
+
+00:12:17.350 --> 00:12:22.188
+especulaciones en torno a este dispositivo son tan antiguas como las del recientemente lanzado
+
+00:12:22.188 --> 00:12:26.688
+iPhone Duo, pero todo apunta a que, a pesar de varios desafíos técnicos y
+
+00:12:26.688 --> 00:12:32.200
+de diseño, los de Cupertino siguen firmes con su desarrollo. Así lo sostuvo Mark
+
+00:12:32.200 --> 00:12:37.325
+Gurman en la más reciente edición de su pódcast. El periodista de Bloomberg, el
+
+00:12:37.325 --> 00:12:41.963
+insider más confiable en lo que respecta al mundo Apple, indicó que los californianos
+
+00:12:41.963 --> 00:12:47.375
+siguen preparando un iPad plegable. El mismo tendrá la pantalla más grande jamás vista
+
+00:12:47.375 --> 00:12:51.138
+en el catálogo de tablets de la manzana, con un panel flexible de entre
+
+00:12:51.138 --> 00:12:53.928
+19 y 20 pulgadas.
+
+00:12:54.028 --> 00:12:58.865
+De Hipertextual: Disney confirma el regreso de la animación 2D y explica cómo usará
+
+00:12:58.865 --> 00:13:02.928
+la IA en sus películas: «Puede aportar algo interesante».
+
+00:13:03.028 --> 00:13:09.378
+Disney ya está lista para estrenar su nueva película, Hechizo: Bienvenidos a Hexe. De
+
+00:13:09.378 --> 00:13:13.740
+nuevo, se trata de un filme realizado con la animación 3D que desde principios
+
+00:13:13.740 --> 00:13:18.790
+de siglo la compañía trata de implementar y mejorar cada año que pasa. Sin
+
+00:13:18.790 --> 00:13:22.340
+embargo, el estudio se encuentra a las puertas de un nuevo cambio en su
+
+00:13:22.340 --> 00:13:27.690
+forma de hacer cine. Y es que Disney comenzará a utilizar Inteligencia Artificial en
+
+00:13:27.690 --> 00:13:33.403
+sus películas. Sin ir más lejos, hace unas semanas se confirmó que Disney llegaba
+
+00:13:33.403 --> 00:13:37.872
+a un acuerdo con Adobe como su socio oficial en innovación en IA.
+
+00:13:37.972 --> 00:13:42.659
+De Infobae: Nvidia prepara un recorte de hasta el 30 % en el suministro de
+
+00:13:42.659 --> 00:13:45.096
+GPU para jugadores.
+
+00:13:45.196 --> 00:13:50.571
+Nvidia podría reducir entre un 20 % y un 30 % el suministro de chips destinados
+
+00:13:50.571 --> 00:13:58.721
+a las tarjetas gráficas para videojuegos durante el trimestre comprendido entre noviembre de 2026 y enero de 2027.
+
+00:13:58.721 --> 00:14:03.908
+La medida, que todavía no ha sido confirmada por la compañía, genera preocupación entre
+
+00:14:03.908 --> 00:14:07.921
+los fabricantes y los usuarios de PC, debido a sus posibles efectos en la
+
+00:14:07.921 --> 00:14:13.208
+disponibilidad de estos componentes y en sus precios. La información fue difundida por el
+
+00:14:13.208 --> 00:14:18.321
+medio especializado VideoCardz, donde se señala que Nvidia habría comunicado a sus socios una
+
+00:14:18.321 --> 00:14:22.584
+nueva reducción en la asignación de chips para tarjetas gráficas.
+
+00:14:22.684 --> 00:14:26.609
+De Infobae: Un juez fijó para marzo el juicio de las empresas de Musk
+
+00:14:26.609 --> 00:14:29.880
+contra OpenAI por monopolio en chatbots.
+
+00:14:29.980 --> 00:14:34.642
+Un juez federal de Texas fijó para el 15 de marzo de 2027 el juicio con
+
+00:14:34.642 --> 00:14:40.542
+jurado por la demanda antimonopolio que las empresas de Elon Musk presentaron contra OpenAI.
+
+00:14:40.542 --> 00:14:46.005
+Apple, que figuraba como codemandada, salió del caso en septiembre tras un acuerdo cuyos
+
+00:14:46.005 --> 00:14:52.267
+términos no se divulgaron. El juez Mark Pittman, del Tribunal Federal del Distrito Norte
+
+00:14:52.267 --> 00:14:59.217
+de Texas, firmó la orden el 17 de noviembre. El expediente, identificado como 4:
+
+00:14:59.217 --> 00:15:05.830
+25-cv-00914, mueve la fecha del juicio y todos los plazos previos del proceso por
+
+00:15:05.830 --> 00:15:12.855
+60 días. “ El tribunal no tiene más opción ” que hacerlo, escribió el magistrado, sin explicar
+
+00:15:12.855 --> 00:15:14.424
+el motivo.
+
+00:15:14.524 --> 00:15:20.061
+De MuyComputer: Gemini Notebook quiere que estudies mejor, y ahora también te recuerda cuándo
+
+00:15:20.061 --> 00:15:21.360
+toca.
+
+00:15:21.460 --> 00:15:25.872
+Hay una diferencia importante entre entender algo mientras lo estamos leyendo y ser capaces
+
+00:15:25.872 --> 00:15:32.635
+de recordarlo unos días después. Podemos preparar unos apuntes excelentes, organizar toda la información
+
+00:15:32.635 --> 00:15:38.760
+y generar resúmenes muy completos, pero aprender también exige practicar, comprobar qué recordamos y,
+
+00:15:38.760 --> 00:15:45.735
+sobre todo, mantener cierta constancia. Gemini Notebook quiere ayudarnos precisamente con esa parte del
+
+00:15:45.735 --> 00:15:50.260
+proceso, y Google acaba de anunciar tres mejoras para sus tarjetas de estudio que
+
+00:15:50.260 --> 00:15:55.785
+permiten incorporar imágenes, medir el tiempo de respuesta y programar recordatorios para no olvidarnos
+
+00:15:55.785 --> 00:15:57.408
+de repasar.
+
+00:15:57.508 --> 00:16:02.633
+De MuyComputer: GeForce NOW llega al Black Friday con 12 juegos y un regalo para
+
+00:16:02.633 --> 00:16:04.272
+War Thunder.
+
+00:16:04.372 --> 00:16:07.922
+El Black Friday ya está aquí, y con él llegan algunas de las mejores
+
+00:16:07.922 --> 00:16:13.434
+oportunidades del año para ampliar nuestra biblioteca de videojuegos, renovar nuestro equipo o descubrir
+
+00:16:13.434 --> 00:16:18.747
+nuevas formas de disfrutar de nuestros títulos favoritos. Pero no todas las ofertas requieren
+
+00:16:18.747 --> 00:16:23.547
+una inversión en hardware, y GeForce NOW quiere demostrarlo con importantes descuentos en sus
+
+00:16:23.547 --> 00:16:29.022
+suscripciones, que permiten acceder a una experiencia de juego de altas prestaciones desde prácticamente
+
+00:16:29.022 --> 00:16:36.622
+cualquier dispositivo. NVIDIA acompaña estas promociones con doce nuevas incorporaciones al catálogo, mejoras gráficas
+
+00:16:36.622 --> 00:16:41.520
+para dos juegos y una recompensa especial para los aficionados a War Thunder.
+
+00:16:41.620 --> 00:16:45.632
+De Wired en español: ¿Qué deberían aprender los niños sin la ayuda de la
+
+00:16:45.632 --> 00:16:47.880
+inteligencia artificial?
+
+00:16:47.980 --> 00:16:52.092
+Mientras las escuelas se replantean el uso de las pantallas y adoptan profesores de
+
+00:16:52.092 --> 00:16:57.092
+inteligencia artificial, crece el debate sobre cómo aprenden los niños y qué habilidades deben
+
+00:16:57.092 --> 00:17:00.456
+desarrollar sin recurrir a esta tecnología.
+
+00:17:00.556 --> 00:17:05.131
+De Wired en español: Una plataforma de IA para cobrar deudas expuso datos de
+
+00:17:05.131 --> 00:17:08.640
+6.6 millones de cuentas bancarias.
+
+00:17:08.740 --> 00:17:13.952
+Dos graves vulnerabilidades en la plataforma CreditNirvana habrían permitido a los hackers acceder a
+
+00:17:13.952 --> 00:17:20.677
+gran cantidad de información confidencial detallada, incluidos correos electrónicos, mensajes de texto e informes
+
+00:17:20.677 --> 00:17:22.464
+crediticios.
+
+00:17:22.564 --> 00:17:27.451
+De Xataka: SpaceX tiene luz verde para desplegar un millón de satélites con centros
+
+00:17:27.451 --> 00:17:31.176
+de datos: no es por la IA es por la energía.
+
+00:17:31.276 --> 00:17:37.763
+La Comisión Federal de Comunicaciones (FCC) concedió a SpaceX un permiso sin precedentes: puede
+
+00:17:37.763 --> 00:17:42.013
+lanzar hasta un millón de satélites para construir una constelación de pequeños centros de
+
+00:17:42.013 --> 00:17:47.151
+datos en órbita conectados entre sí. El proyecto se llama Starmind y el regulador
+
+00:17:47.151 --> 00:17:52.226
+lo presentó como la primera autorización de este tipo en la historia de EEUU.
+
+00:17:52.226 --> 00:17:55.701
+En los últimos años se ha hablado mucho de la necesidad de incrementar la
+
+00:17:55.701 --> 00:17:59.876
+capacidad de computación, de la escasez de chips o de las dificultades que están
+
+00:17:59.876 --> 00:18:04.512
+teniendo los promotores de los centros de datos con sus poblaciones vecinas.
+
+00:18:04.612 --> 00:18:10.537
+De Xataka: Llevamos décadas tratando de unir la relatividad y la física cuántica. Un
+
+00:18:10.537 --> 00:18:14.304
+investigador de OpenAI dice que lo ha conseguido.
+
+00:18:14.404 --> 00:18:24.479
+El miércoles 25 de noviembre, a las 18:58 (hora universal), llegó a arXiv un documento de 54 páginas, 34 figuras
+
+00:18:24.479 --> 00:18:28.641
+y un solo autor. No me voy a andar por las ramas: si lo
+
+00:18:28.641 --> 00:18:32.666
+que se dice en ese paper es cierto, estaríamos ante uno de los avances
+
+00:18:32.666 --> 00:18:38.629
+más importantes de la física teórica en décadas. Después de la conjetura de Riemann,
+
+00:18:38.629 --> 00:18:44.441
+de VP ≠ VNP o la multiplicación de matrices, ahora hay investigadores que (a
+
+00:18:44.441 --> 00:18:48.616
+lomos de la IA) quieren unificar la física cuántica y la teoría de la
+
+00:18:48.616 --> 00:18:56.179
+relatividad (al menos en aspectos sustanciales). Pero vayamos por partes. Una teoría cuántica de
+
+00:18:56.179 --> 00:18:57.792
+la gravedad.
+
+00:18:57.892 --> 00:19:02.529
+De Genbeta: "Ni siquiera sé por qué todavía tenemos Phone Dialer": un directivo de
+
+00:19:02.529 --> 00:19:07.829
+Microsoft admite que Windows 11 aún incluye una app de Windows 95 para módems que
+
+00:19:07.829 --> 00:19:09.456
+nadie usa.
+
+00:19:09.556 --> 00:19:14.281
+Windows 11 es la versión más moderna del sistema operativo de Microsoft, pero sigue
+
+00:19:14.281 --> 00:19:19.793
+incluyendo varias herramientas que ya cuentan con varias décadas a sus espaldas. Es el
+
+00:19:19.793 --> 00:19:24.431
+caso del Marcador de teléfono, una aplicación de la época de Windows 95 que
+
+00:19:24.431 --> 00:19:28.281
+servía para hacer llamadas de voz a través del módem, algo que ni siquiera
+
+00:19:28.281 --> 00:19:32.981
+en Microsoft parecen tener claro por qué sigue ahí. Y un ejemplo son las
+
+00:19:32.981 --> 00:19:37.968
+palabras de Brandon LeBlanc, director de comunicación de Windows, que respondió en X a
+
+00:19:37.968 --> 00:19:43.368
+un usuario diciendo: “ni siquiera sé por qué todavía tenemos Phone Dialer, estaba pensado
+
+00:19:43.368 --> 00:19:48.081
+para una época en la que los PC tenían módems”. Una reliquia a un
+
+00:19:48.081 --> 00:19:51.384
+Win+R de distancia.
+
+00:19:51.484 --> 00:19:55.512
+Ahora, las noticias en inglés, para practicar.
+
+00:19:55.617 --> 00:19:58.584
+And now, the news in English.
+
+00:19:58.689 --> 00:20:01.320
+Artificial intelligence.
+
+00:20:01.425 --> 00:20:07.620
+From The Verge: 42 state AGs are trying to stop Character.AI from selling users’
+
+00:20:07.620 --> 00:20:09.216
+chats.
+
+00:20:09.321 --> 00:20:15.349
+A coalition of 42 state attorneys general is trying to prevent Character.AI from selling
+
+00:20:15.349 --> 00:20:22.118
+off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly
+
+00:20:22.118 --> 00:20:27.924
+identical press releases, the various AGs accuse the company of planning to auction off "
+
+00:20:27.924 --> 00:20:33.354
+the private chat histories of more than 21 million U.S. accounts - more than 2.1
+
+00:20:33.354 --> 00:20:38.493
+million of them registered to minors - with no safeguards for the people whose conversations
+
+00:20:38.493 --> 00:20:45.257
+are being sold." In October, Character.AI filed for bankruptcy following years of scandals and
+
+00:20:45.257 --> 00:20:51.952
+legal challenges, including from Disney. Disney ended up buying some of the company's assets
+
+00:20:51.952 --> 00:20:58.104
+and hiring its CEO, K … Read the full story at The Verge.
+
+00:20:58.209 --> 00:21:03.501
+From The Verge: Google’s patent for custom AI video feeds paints a bleak picture
+
+00:21:03.501 --> 00:21:05.952
+of entertainment’s future.
+
+00:21:06.057 --> 00:21:11.085
+Last year, Google filed a patent for a system called My Channel that's designed
+
+00:21:11.085 --> 00:21:18.043
+to create feeds filled with personalized, AI-generated videos and advertisements based on information the
+
+00:21:18.043 --> 00:21:24.868
+company knows about its users. The patent has been rejected, but unfortunately, Google might
+
+00:21:24.868 --> 00:21:29.743
+appeal or resubmit an amended version, and we could see this monstrosity come to
+
+00:21:29.743 --> 00:21:36.396
+market. First spotted by Patentlyze, the patent - which was filed last May and published
+
+00:21:36.396 --> 00:21:41.354
+last week - describes how My Channel would use a person's demographic data and viewing
+
+00:21:41.354 --> 00:21:45.521
+history to create its own prompts that would then be fed into an LLM
+
+00:21:45.521 --> 00:21:50.646
+to help generate AI videos tailored to that … Read the full story at The
+
+00:21:50.646 --> 00:21:52.224
+Verge.
+
+00:21:52.329 --> 00:21:59.448
+From Wired: Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains.
+
+00:21:59.553 --> 00:22:04.873
+The FCA warned against “another force of attack” from agents after the company declined
+
+00:22:04.873 --> 00:22:09.331
+a request to work on joint testing ahead of rolling out its personal agent
+
+00:22:09.331 --> 00:22:12.048
+in the UK on Tuesday.
+
+00:22:12.153 --> 00:22:19.320
+From ZDNet: ZDNET’s best headphones of 2026: These two pairs left us impressed.
+
+00:22:19.425 --> 00:22:26.445
+We tested dozens of Bluetooth headphones in 2026, but two stood out. Here’s our top
+
+00:22:26.445 --> 00:22:28.032
+picks.
+
+00:22:28.137 --> 00:22:33.665
+From ZDNet: You can turn Claude artifacts into Windows and Mac apps now – here’s
+
+00:22:33.665 --> 00:22:35.064
+how.
+
+00:22:35.169 --> 00:22:40.336
+Anthropic’s new ‘install as app’ feature makes it easy to turn your Claude artifacts
+
+00:22:40.336 --> 00:22:45.216
+into desktop apps on your computer – with some limitations.
+
+00:22:45.321 --> 00:22:50.976
+From OpenAI: How Intentful uses dots to make more time for growth.
+
+00:22:51.081 --> 00:22:58.248
+Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages
+
+00:22:58.248 --> 00:23:00.672
+and resolving issues.
+
+00:23:00.777 --> 00:23:07.180
+From Hugging Face: Introducing the llama.cpp benchmark dashboard for AMD Ryzen and
+
+00:23:07.180 --> 00:23:08.784
+Radeon.
+
+00:23:08.889 --> 00:23:13.176
+From Simon Willison: Quoting Jack Despain Zhou.
+
+00:23:13.281 --> 00:23:19.814
+Among the many already existing effects of AI has been a great de-individualization. I
+
+00:23:19.814 --> 00:23:25.856
+open a YouTube video, and I hear Claude. I sit in a conference presentation,
+
+00:23:25.856 --> 00:23:31.453
+and I hear Claude. I open my email inbox, and I find pitches and
+
+00:23:31.453 --> 00:23:39.051
+articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions
+
+00:23:39.051 --> 00:23:43.328
+who want to publish things attached to their reputations and mine, and I see
+
+00:23:43.328 --> 00:23:51.523
+Claude. — Jack Despain Zhou, Spitting in the Face of Glaude Tags: ai-misuse, claude, generative-ai,
+
+00:23:51.523 --> 00:23:54.192
+ai, llms
+
+00:23:54.297 --> 00:23:57.744
+Google, Microsoft and NVIDIA.
+
+00:23:57.849 --> 00:24:04.056
+From The Verge: Android app developers will soon have to share their address publicly.
+
+00:24:04.161 --> 00:24:09.731
+Independent Android app developers are worried about their privacy after Google announced that from
+
+00:24:09.731 --> 00:24:13.342
+next year many of them will be required to share a phone number and
+
+00:24:13.342 --> 00:24:20.056
+address publicly. The policy change is intended to meet European Union regulations under the
+
+00:24:20.056 --> 00:24:27.667
+Digital Services Act, but Google says contact details will be made public worldwide. Developers
+
+00:24:27.667 --> 00:24:33.792
+have until February 1st 2027 to declare whether or not they're a "trader" under UK and
+
+00:24:33.792 --> 00:24:40.389
+European law. Broadly speaking, Google says the definition applies if you earn revenue from
+
+00:24:40.389 --> 00:24:46.556
+your apps, especially if that revenue is regular or at high volume. Developers are
+
+00:24:46.556 --> 00:24:52.248
+exempt if their apps are only … Read the full story at The Verge.
+
+00:24:52.353 --> 00:24:59.214
+From The Verge: Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home
+
+00:24:59.214 --> 00:25:01.056
+camera too.
+
+00:25:01.161 --> 00:25:06.425
+A couple of Walmart's budget-friendly smart home cameras will be able to recognize people
+
+00:25:06.425 --> 00:25:12.528
+around your house now using Google's familiar face detection feature. A new Google Home
+
+00:25:12.528 --> 00:25:19.597
+update brings Familiar Faces support to the $35 Onn Outdoor Camera Plug-In and $77
+
+00:25:19.597 --> 00:25:26.653
+Onn Floodlight Camera Hardwired. However, a Google Home Premium subscription is still required to
+
+00:25:26.653 --> 00:25:34.083
+access the feature. Both cameras and Google's Nest Cam Outdoor (wired, 2nd gen) also
+
+00:25:34.083 --> 00:25:37.444
+have a new remote control in the Google Home app you can use to
+
+00:25:37.444 --> 00:25:43.736
+start or stop a 30-second security siren while watching the camera's live video feed.
+
+00:25:43.736 --> 00:25:49.514
+Earlier this month, Google announced that Gemini Live … Read the full story at The
+
+00:25:49.514 --> 00:25:51.072
+Verge.
+
+00:25:51.177 --> 00:25:57.168
+From Google Blog: 15 years of investing in Colombia’s talent and future.
+
+00:25:57.273 --> 00:26:04.968
+Google marks 15 years in Colombia with over $1M in Google.org funding for AI education,
+
+00:26:04.968 --> 00:26:09.552
+small businesses, rural youth, and disaster relief.
+
+00:26:09.657 --> 00:26:14.880
+From Google Blog: We’re expanding our London home in King's Cross.
+
+00:26:14.985 --> 00:26:22.505
+In 2016, we arrived in King’s Cross as founding residents of the Knowledge Quarter. Today,
+
+00:26:22.505 --> 00:26:28.560
+we’re announcing our plan to purchase 6 Pancras Square.Alongside Central Saint…
+
+00:26:28.665 --> 00:26:34.728
+From NVIDIA Blog: Come for the Games, Stay for the Community With GeForce NOW.
+
+00:26:34.833 --> 00:26:42.422
+Good games bring people together. This GFN Thursday, GeForce NOW is celebrating the members,
+
+00:26:42.422 --> 00:26:49.436
+creators and community moderators who turn every session into something worth sharing. From friendships
+
+00:26:49.436 --> 00:26:55.908
+formed in online lobbies to new worlds explored on everyday devices, GeForce NOW Ambassadors
+
+00:26:55.908 --> 00:27:01.144
+share their reasons to love cloud gaming. Those ready to find their own can
+
+00:27:01.144 --> 00:27:07.019
+get 30% off six-month Performance and Ultimate memberships in the Black Friday sale and
+
+00:27:07.019 --> 00:27:13.450
+a special seasonal offer through Amazon Fire TV Sticks. Plus, War Thunder gets a
+
+00:27:13.450 --> 00:27:18.422
+new look with NVIDIA DLSS 5 for Ultimate members and a Ready for Battle
+
+00:27:18.422 --> 00:27:23.088
+Pack reward is now available across all membership tiers.
+
+00:27:23.193 --> 00:27:30.776
+From NVIDIA Developer: How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register
+
+00:27:30.776 --> 00:27:32.544
+Recycling.
+
+00:27:32.649 --> 00:27:38.552
+Attention can be a major bottleneck when serving world foundation models, where long sequences
+
+00:27:38.552 --> 00:27:47.669
+make inference computationally demanding. On NVIDIA Hopper and NVIDIA Blackwell data center GPUs, FlashAttention3
+
+00:27:47.669 --> 00:27:57.002
+and FlashAttention4 improve attention performance by overlapping matrix multiply-accumulate (MMA) operations through softmax within
+
+00:27:57.002 --> 00:28:00.624
+a thread block. However…
+
+00:28:00.729 --> 00:28:02.616
+Programming.
+
+00:28:02.721 --> 00:28:08.904
+From GitHub Blog: How to choose the next safe step in application modernization.
+
+00:28:09.009 --> 00:28:15.106
+A request to modernize an application often starts with a technology question: Which framework
+
+00:28:15.106 --> 00:28:21.723
+should replace the old one? Before you choose, find out what still works. Then
+
+00:28:21.723 --> 00:28:26.084
+collect evidence that can act as a regression net for that behavior and show
+
+00:28:26.084 --> 00:28:33.390
+where modernization is necessary. I used an evidence-first method on four public applications, from
+
+00:28:33.390 --> 00:28:39.181
+a small Node.js game to a large Java enterprise resource planning (ERP)
+
+00:28:39.181 --> 00:28:45.626
+application. Each needed a different treatment, but the way I collected evidence, chose the
+
+00:28:45.626 --> 00:28:52.195
+next experiment, and decided on possible proof points was repeatable. This post walks through
+
+00:28:52.195 --> 00:28:56.664
+that process so you can apply it to one application of your own.
+
+00:28:56.769 --> 00:28:58.560
+Python.
+
+00:28:58.665 --> 00:29:06.312
+From Real Python: Quiz: Python and TOML: Read, Write, and Configure with tomllib.
+
+00:29:06.417 --> 00:29:12.556
+In this quiz, you’ll test your understanding of Python and TOML: Read, Write, and
+
+00:29:12.556 --> 00:29:20.450
+Configure with tomllib. By working through this quiz, you’ll revisit TOML syntax, including key-value
+
+00:29:20.450 --> 00:29:28.617
+pairs, tables, arrays, and dates. You’ll also practice loading TOML with tomllib, writing it
+
+00:29:28.617 --> 00:29:37.131
+with tomli_w, and editing existing documents with tomlkit without losing comments or formatting. [ Improve
+
+00:29:37.131 --> 00:29:42.020
+Your Python With Python Tricks – Get a short & sweet Python Trick delivered to
+
+00:29:42.020 --> 00:29:48.504
+your inbox every couple of days. >> Click here to learn more and see examples ]
+
+00:29:48.609 --> 00:29:50.376
+Linux.
+
+00:29:50.481 --> 00:29:58.536
+From OMG! Ubuntu: XNULinux lets you run macOS on Linux without a VM.
+
+00:29:58.641 --> 00:30:04.211
+A new open-source project loads Apple’s XNU kernel as a module inside the Linux
+
+00:30:04.211 --> 00:30:12.063
+kernel, allowing the macOS desktop to run natively – no virtual machine required. The XNULinux
+
+00:30:12.063 --> 00:30:18.147
+project is open source, highly experimental and likely not-something Apple bods will be thrilled
+
+00:30:18.147 --> 00:30:23.299
+to see. Not that they’ll be swearing as it’s not something users can easily
+
+00:30:23.299 --> 00:30:30.855
+download and run themselves – not yet, at least. On its Github, XNULinux’s developer, Heyang
+
+00:30:30.855 --> 00:30:37.077
+Zhou, shows screenshots of the macOS 27 Golden Gate desktop running on an NVIDIA
+
+00:30:37.077 --> 00:30:45.258
+DGX Spark (whose default OS is based on Ubuntu 24.04 LTS). Core Mac apps
+
+00:30:45.258 --> 00:30:50.591
+You're reading XNULinux lets you run macOS on Linux without a VM, a blog
+
+00:30:50.591 --> 00:30:54.840
+post from OMG! Ubuntu.
+
+00:30:54.945 --> 00:30:57.552
+GitHub repositories.
+
+00:30:57.657 --> 00:31:01.896
+Repository FreeVideo, by FlashML-org.
+
+00:31:02.001 --> 00:31:08.604
+Make videos on the computer you already own. FreeVideo runs MiniMax H3 in as
+
+00:31:08.604 --> 00:31:15.187
+little as 8 GB of VRAM and 16 GB of RAM, and adapts its acceleration path
+
+00:31:15.187 --> 00:31:17.088
+to your hardware.
+
+00:31:17.193 --> 00:31:21.144
+Repository treg, by superdesigndev.
+
+00:31:21.249 --> 00:31:26.712
+OpenRouter for agent tools. Join community here
+
+00:31:26.817 --> 00:31:30.816
+Repository heretic, by p-e-w.
+
+00:31:30.921 --> 00:31:39.216
+Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more
+
+00:31:39.321 --> 00:31:43.392
+Repository nod, by n8n-io.
+
+00:31:43.497 --> 00:31:50.100
+Open source personal agent with its own computer. It chases invoices, preps your calls
+
+00:31:50.100 --> 00:31:56.128
+and cancels trials on real websites, and asks before it acts. Runs on your
+
+00:31:56.128 --> 00:32:01.248
+machine with the model you choose. By n8n.
+
+00:32:01.353 --> 00:32:05.328
+Repository univer, by dream-num.
+
+00:32:05.433 --> 00:32:13.939
+Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and
+
+00:32:13.939 --> 00:32:20.453
+file processing into your product for people and AI agents. Built on an extensible
+
+00:32:20.453 --> 00:32:22.560
+open-source core.
+
+00:32:22.665 --> 00:32:27.144
+From Hacker News: Tell HN: Happy Thanksgiving.
+
+00:32:27.249 --> 00:32:31.704
+From Hacker News: Nextcloud Office Desktop app.
+
+00:32:31.809 --> 00:32:35.712
+From Hacker News: Intel One Mono font.
+
+00:32:35.817 --> 00:32:40.152
+That's all for today. See you tomorrow.
+
+00:32:40.252 --> 00:32:44.827
+Eso es todo por hoy en Radio Tecno. Los enlaces y el texto están
+
+00:32:44.827 --> 00:32:48.888
+en las notas del episodio. Hasta mañana.

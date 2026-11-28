@@ -1,0 +1,110 @@
+<!doctype html>
+<!-- Plantilla de la página "escuchar leyendo". podcast.py la copia a publico/ y cambia Radio Tecno.
+     Lee episodios/AAAA-MM-DD.json (fichas [ms, texto] de cada tramo) y marca la palabra que suena. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio Tecno · Escuchar leyendo</title>
+<style>
+  :root { color-scheme: light dark; --marca: #ffd54a; --tramo: rgba(127, 127, 127, .12); --en: #3b82f6; }
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: auto; padding: 0 1rem 40vh; line-height: 1.6; font-size: 1.15rem; }
+  header { position: sticky; top: 0; padding: .6rem 0; background: Canvas; border-bottom: 1px solid #8884; z-index: 1; }
+  header a { font-size: .9rem; }
+  audio { width: 100%; }
+  .controles { display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; font-size: .9rem; }
+  .controles button { font: inherit; padding: .2rem .6rem; }
+  .controles button.activo { font-weight: bold; outline: 2px solid var(--en); }
+  h2 { font-size: 1.3rem; margin: 1.6rem 0 .3rem; }
+  h3 { font-size: 1.1rem; margin: 1rem 0 .2rem; }
+  p, h2, h3 { padding: .1rem .4rem; border-radius: .3rem; }
+  .en { border-left: 4px solid var(--en); }
+  .en::before { content: "EN"; font-size: .7rem; font-weight: bold; color: var(--en); margin-right: .4rem; }
+  .sonando { background: var(--tramo); }
+  span[data-ms] { cursor: pointer; border-radius: .2rem; }
+  span.marca { background: var(--marca); color: #000; }
+  .parte { margin-top: 2rem; padding: .3rem .5rem; background: var(--tramo); font-weight: bold; }
+</style>
+</head>
+<body>
+<header>
+  <a href="./">← Todos los episodios</a>
+  <audio id="audio" controls preload="metadata"></audio>
+  <div class="controles">
+    Velocidad:
+    <button data-vel="0.8">0.8×</button><button data-vel="0.9">0.9×</button><button data-vel="1" class="activo">1×</button><button data-vel="1.15">1.15×</button>
+    <label><input type="checkbox" id="seguir" checked> Seguir el texto</label>
+  </div>
+</header>
+<main id="texto"><p>Cargando…</p></main>
+<script>
+const audio = document.getElementById("audio");
+const texto = document.getElementById("texto");
+const seguir = document.getElementById("seguir");
+const dia = new URLSearchParams(location.search).get("e") || "";
+const palabras = [];  // [ms, span, elemento del tramo], en orden
+let actual = -1;
+
+fetch(`episodios/${encodeURIComponent(dia)}.json`).then(r => r.ok ? r.json() : Promise.reject(r.status)).then(datos => {
+  audio.src = `episodios/${encodeURIComponent(dia)}.mp3`;
+  texto.textContent = "";
+  let idiomaAnterior = null;
+  for (const tramo of datos.tramos) {
+    if (tramo.idioma !== idiomaAnterior && tramo.idioma === "en" && idiomaAnterior !== null) {
+      const parte = document.createElement("div");
+      parte.className = "parte"; parte.textContent = "English";
+      texto.append(parte);
+    }
+    idiomaAnterior = tramo.idioma;
+    const el = document.createElement({ seccion: "h2", titulo: "h3" }[tramo.tipo] || "p");
+    if (tramo.idioma === "en") el.className = "en";
+    el.lang = tramo.idioma;
+    for (const [ms, trozo] of tramo.fichas) {
+      if (ms < 0) { el.append(trozo); continue; }
+      const span = document.createElement("span");
+      span.textContent = trozo; span.dataset.ms = ms;
+      span.onclick = () => { audio.currentTime = ms / 1000; audio.play(); };
+      el.append(span);
+      palabras.push([ms, span, el]);
+    }
+    texto.append(el);
+  }
+  const guardado = Number(localStorage.getItem(`radio-${dia}`) || 0);
+  if (guardado) audio.currentTime = guardado;
+}).catch(() => { texto.innerHTML = "<p>No encontré ese episodio. <a href='./'>Ver la lista</a>.</p>"; });
+
+function marcar() {
+  const ahora = audio.currentTime * 1000;
+  let a = 0, b = palabras.length - 1, i = -1;
+  while (a <= b) {  // búsqueda binaria: la última palabra que ya empezó
+    const m = (a + b) >> 1;
+    if (palabras[m][0] <= ahora) { i = m; a = m + 1; } else { b = m - 1; }
+  }
+  if (i !== actual) {
+    const anterior = palabras[actual];
+    if (anterior) anterior[1].classList.remove("marca");
+    if (i >= 0) {
+      const [, span, el] = palabras[i];
+      span.classList.add("marca");
+      if (!anterior || anterior[2] !== el) {
+        if (anterior) anterior[2].classList.remove("sonando");
+        el.classList.add("sonando");
+        if (seguir.checked) el.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+    }
+    actual = i;
+  }
+  if (!audio.paused) requestAnimationFrame(marcar);
+}
+audio.addEventListener("play", () => requestAnimationFrame(marcar));
+audio.addEventListener("seeked", marcar);
+audio.addEventListener("timeupdate", () => localStorage.setItem(`radio-${dia}`, audio.currentTime.toFixed(1)));
+for (const boton of document.querySelectorAll("[data-vel]")) {
+  boton.onclick = () => {
+    audio.playbackRate = Number(boton.dataset.vel);
+    document.querySelectorAll("[data-vel]").forEach(b => b.classList.toggle("activo", b === boton));
+  };
+}
+</script>
+</body>
+</html>
